@@ -1,11 +1,34 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+
+// Array de projetos com imagens reais
+const projetosDestaque = [
+  {
+    id: 1,
+    titulo: "Balão Relógio Cuco",
+    descricao: "Balão de ar quente em formato de relógio cuco, um dos mais icônicos special shapes.",
+    imagem: "/cuckoo_relogio_balloon.jpg"
+  },
+  {
+    id: 2,
+    titulo: "Balão F1",
+    descricao: "Balão de ar quente em formato de carro de Fórmula 1, criado para eventos esportivos.",
+    imagem: "/f1_ballooon.jpg"
+  },
+  {
+    id: 3,
+    titulo: "Balão Bola de Basquete",
+    descricao: "Balão de ar quente em formato de bola de basquete, desenvolvido para eventos esportivos.",
+    imagem: "/bola_de_basquete_balloon.jpg"
+  }
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center w-full">
       {/* Hero Section com Imagem de Fundo */}
       <section 
         className="relative h-[90vh] w-full overflow-hidden"
@@ -16,17 +39,15 @@ export default function Home() {
           backgroundRepeat: "no-repeat"
         }}
       >
-        {/* Overlay escuro para melhorar a legibilidade do texto */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
+        {/* Conteúdo principal */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-          <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+          <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl text-shadow-lg">
             Eduardo Libra
           </h1>
-          <p className="mb-6 max-w-3xl text-xl sm:text-2xl">
+          <p className="mb-6 max-w-3xl text-xl sm:text-2xl text-shadow-md">
             Designer e Construtor de Obras de Arte Gigantes
           </p>
-          <p className="mb-8 max-w-2xl text-lg opacity-90">
+          <p className="mb-8 max-w-2xl text-lg opacity-90 text-shadow-md">
             Especialista em obras de arte infláveis gigantes, faixas gigantes, impressões em tecido e balões de ar quente.
           </p>
           <Link href="/projetos">
@@ -38,7 +59,10 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container py-24">
+      <section className="container py-24 text-center">
+        <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
+          Por que escolher Eduardo Libra?
+        </h2>
         <div className="grid gap-12 md:grid-cols-3">
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
@@ -48,6 +72,9 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-semibold">Com mais de 25 anos no mercado</h3>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              Experiência e conhecimento técnico para criar obras de arte únicas e seguras.
+            </p>
           </div>
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
@@ -58,6 +85,9 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-semibold">Experiência internacional em mais de 15 países</h3>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              Projetos realizados em eventos internacionais por todo o mundo.
+            </p>
           </div>
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
@@ -66,26 +96,34 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="mb-2 text-xl font-semibold">Especialista #1 no Brasil em balões de ar quente formato Special Shape</h3>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              Criações exclusivas e personalizadas para eventos e marcas.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Projetos em Destaque */}
-      <section className="bg-neutral-50 py-24 dark:bg-neutral-900">
-        <div className="container">
+      <section className="bg-neutral-50 py-24 w-full dark:bg-neutral-900">
+        <div className="container mx-auto">
           <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
             Projetos em Destaque
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:scale-[1.02] dark:bg-neutral-800">
+            {projetosDestaque.map((projeto) => (
+              <div key={projeto.id} className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:scale-[1.02] dark:bg-neutral-800">
                 <div className="relative h-64 w-full">
-                  <div className="h-full w-full bg-neutral-200 dark:bg-neutral-700"></div>
+                  <Image 
+                    src={projeto.imagem} 
+                    alt={projeto.titulo}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-2 text-xl font-semibold">Projeto {item}</h3>
+                  <h3 className="mb-2 text-xl font-semibold">{projeto.titulo}</h3>
                   <p className="text-neutral-600 dark:text-neutral-300">
-                    Descrição do projeto {item}
+                    {projeto.descricao}
                   </p>
                 </div>
               </div>
@@ -97,6 +135,49 @@ export default function Home() {
                 Ver todos os projetos
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Galeria de Imagens */}
+      <section className="py-24 w-full">
+        <div className="container mx-auto">
+          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
+            Galeria de Balões
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image 
+                src="/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg" 
+                alt="Balões especiais"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image 
+                src="/baloes_2.jpg" 
+                alt="Balões coloridos"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image 
+                src="/tick_tock_special_shaped_eduardo_libra.jpg" 
+                alt="Balão Tick Tock"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image 
+                src="/balao_relogio.jpg" 
+                alt="Balão Relógio"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

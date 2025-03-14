@@ -1,10 +1,11 @@
 "use client";
 
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export default function Contact() {
   return (
-    <div className="container py-12 md:py-24">
+    <div className="container py-12 md:py-24 mx-auto">
       <div className="mb-16 text-center">
         <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
           Contato
@@ -90,6 +91,49 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+          </div>
+          
+          {/* Imagem decorativa */}
+          <div className="mt-8 rounded-lg overflow-hidden">
+            <div className="relative h-64 w-full">
+              <Image 
+                src="/baloes_2.jpg" 
+                alt="Balões coloridos"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Galeria de imagens de contato */}
+      <div className="mt-16">
+        <h2 className="mb-8 text-center text-2xl font-bold">Visite nosso ateliê</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="relative h-64 rounded-lg overflow-hidden">
+            <Image 
+              src="/cuckoo_relogio_balloon.jpg" 
+              alt="Balão Relógio Cuco"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative h-64 rounded-lg overflow-hidden">
+            <Image 
+              src="/f1_ballooon.jpg" 
+              alt="Balão F1"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative h-64 rounded-lg overflow-hidden">
+            <Image 
+              src="/bola_de_basquete_balloon.jpg" 
+              alt="Balão Bola de Basquete"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

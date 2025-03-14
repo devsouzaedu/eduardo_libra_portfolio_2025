@@ -1,7 +1,52 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+
+// Array de posts do blog com imagens reais
+const blogPosts = [
+  {
+    id: 1,
+    titulo: "A História dos Balões Special Shape",
+    resumo: "Conheça a evolução dos balões de ar quente em formatos especiais e como eles revolucionaram eventos pelo mundo.",
+    data: "15/03/2024",
+    autor: "Eduardo Libra",
+    imagem: "/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg"
+  },
+  {
+    id: 2,
+    titulo: "Balões de Ar Quente em Eventos Corporativos",
+    resumo: "Como os balões de ar quente podem transformar a experiência de marca em eventos corporativos.",
+    data: "10/03/2024",
+    autor: "Eduardo Libra",
+    imagem: "/baloes_2.jpg"
+  },
+  {
+    id: 3,
+    titulo: "O Processo de Criação de um Balão Special Shape",
+    resumo: "Descubra as etapas de design e construção de um balão de ar quente em formato especial.",
+    data: "05/03/2024",
+    autor: "Eduardo Libra",
+    imagem: "/cuckoo_relogio_balloon.jpg"
+  },
+  {
+    id: 4,
+    titulo: "Balão Relógio: Um Ícone nos Céus",
+    resumo: "A história por trás da criação do famoso balão em formato de relógio e seu impacto visual.",
+    data: "28/02/2024",
+    autor: "Eduardo Libra",
+    imagem: "/tick_tock_special_shaped_eduardo_libra.jpg"
+  },
+  {
+    id: 5,
+    titulo: "Inovações em Balões Temáticos",
+    resumo: "As mais recentes inovações tecnológicas na criação de balões temáticos para eventos.",
+    data: "20/02/2024",
+    autor: "Eduardo Libra",
+    imagem: "/bola_de_basquete_balloon.jpg"
+  }
+];
 
 export default function Blog() {
   const handleNewPostClick = () => {
@@ -15,7 +60,7 @@ export default function Blog() {
   };
 
   return (
-    <div className="container py-12 md:py-24">
+    <div className="container py-12 md:py-24 mx-auto">
       <div className="mb-16 flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
         <div>
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -31,23 +76,28 @@ export default function Blog() {
       </div>
 
       {/* Blog Posts */}
-      <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-        {[1, 2, 3, 4, 5].map((post) => (
-          <div key={post} className="group flex flex-col overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg dark:bg-neutral-800">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {blogPosts.map((post) => (
+          <div key={post.id} className="group flex flex-col overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg dark:bg-neutral-800">
             <div className="relative h-48 w-full overflow-hidden">
-              <div className="h-full w-full bg-neutral-200 dark:bg-neutral-700"></div>
+              <Image 
+                src={post.imagem} 
+                alt={post.titulo}
+                fill
+                className="object-cover transition-transform group-hover:scale-105"
+              />
             </div>
             <div className="flex flex-1 flex-col p-6">
               <div className="mb-2 flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
-                <span>{new Date().toLocaleDateString()}</span>
+                <span>{post.data}</span>
                 <span>•</span>
-                <span>Eduardo Libra</span>
+                <span>{post.autor}</span>
               </div>
-              <h3 className="mb-3 text-xl font-semibold">Título do Post {post}</h3>
+              <h3 className="mb-3 text-xl font-semibold">{post.titulo}</h3>
               <p className="mb-6 flex-1 text-neutral-600 dark:text-neutral-400">
-                Resumo do post {post}
+                {post.resumo}
               </p>
-              <Link href={`/blog/${post}`} className="text-sm font-medium text-neutral-900 hover:underline dark:text-neutral-50">
+              <Link href={`/blog/${post.id}`} className="text-sm font-medium text-neutral-900 hover:underline dark:text-neutral-50">
                 Leia mais →
               </Link>
             </div>
