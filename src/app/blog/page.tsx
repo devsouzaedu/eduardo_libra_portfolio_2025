@@ -49,16 +49,6 @@ const blogPosts = [
 ];
 
 export default function BlogPage() {
-  const handleNewPostClick = () => {
-    const password = prompt('Digite a senha para criar um novo post:');
-    if (password === '2210') {
-      alert('Senha correta! Redirecionando para o editor de posts...');
-      // Aqui você implementaria a lógica para redirecionar para o editor de posts
-    } else {
-      alert('Senha incorreta!');
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto py-12">
