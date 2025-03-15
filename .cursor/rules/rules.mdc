@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+# Your rule content
+
+- Always answer in portuguese - brazil
+- Use MCP to debug
+

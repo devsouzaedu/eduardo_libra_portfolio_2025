@@ -1,28 +1,92 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a192f;
+  --primary: #0a192f;
+  --primary-dark: #071326;
+  --primary-light: #172a46;
+  --secondary: #1f4287;
+  --accent: #2d6cdf;
+  --muted: #64748b;
+  --muted-foreground: #64748b;
+  --card: #ffffff;
+  --card-foreground: #0a192f;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  
+  /* Espaçamento */
+  --section-spacing: 8rem;
+  --element-spacing: 2.5rem;
+  --text-spacing: 1.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: 'Inter', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a1525;
+    --foreground: #f8fafc;
+    --primary: #102a43;
+    --primary-dark: #0a192f;
+    --primary-light: #1e3a5f;
+    --secondary: #2563eb;
+    --accent: #3b82f6;
+    --muted: #64748b;
+    --muted-foreground: #94a3b8;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --border: #334155;
+    --input: #334155;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+/* Classes de espaçamento */
+.section-spacing {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}
+
+.section-spacing-y {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+}
+
+.element-spacing {
+  margin-bottom: var(--element-spacing);
+}
+
+.text-spacing {
+  margin-bottom: var(--text-spacing);
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 /* Classes de sombra de texto para melhorar a legibilidade sobre imagens */

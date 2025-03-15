@@ -69,60 +69,62 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container py-24 text-center">
-        <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
-          Por que escolher Eduardo Libra?
-        </h2>
-        <div className="grid gap-12 md:grid-cols-3">
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
+      <section className="section-spacing-y w-full">
+        <div className="container mx-auto">
+          <h2 className="element-spacing text-center text-3xl font-bold tracking-tight sm:text-4xl">
+            Por que Eduardo Libra?
+          </h2>
+          <div className="grid gap-12 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-semibold">Com mais de 25 anos no mercado</h3>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                Experiência e conhecimento técnico para criar obras de arte únicas e seguras.
+              </p>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">Com mais de 25 anos no mercado</h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              Experiência e conhecimento técnico para criar obras de arte únicas e seguras.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-semibold">Experiência internacional em + de 15 países</h3>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                Projetos realizados em eventos internacionais por todo o mundo.
+              </p>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">Experiência internacional em mais de 15 países</h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              Projetos realizados em eventos internacionais por todo o mundo.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 rounded-full bg-neutral-100 p-4 dark:bg-neutral-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-semibold">Especialista #1 no Brasil em balões de ar quente formato Special Shape</h3>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                Criações exclusivas e personalizadas para eventos e marcas.
+              </p>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">Especialista #1 no Brasil em balões de ar quente formato Special Shape</h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              Criações exclusivas e personalizadas para eventos e marcas.
-            </p>
           </div>
         </div>
       </section>
 
       {/* Projetos em Destaque */}
-      <section className="bg-neutral-50 py-24 w-full dark:bg-neutral-900">
+      <section className="section-spacing-y w-full bg-neutral-50 dark:bg-neutral-900">
         <div className="container mx-auto">
-          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="element-spacing text-center text-3xl font-bold tracking-tight sm:text-4xl">
             Projetos em Destaque
           </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             {projetosDestaque.map((projeto) => (
               <div key={projeto.id} className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:scale-[1.02] dark:bg-neutral-800">
-                <div className="relative h-64 w-full">
+                <div className="relative h-72 w-full">
                   <Image 
                     src={projeto.imagem} 
                     alt={projeto.titulo}
@@ -130,8 +132,8 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="mb-2 text-xl font-semibold">{projeto.titulo}</h3>
+                <div className="p-8">
+                  <h3 className="mb-4 text-xl font-semibold">{projeto.titulo}</h3>
                   <p className="text-neutral-600 dark:text-neutral-300">
                     {projeto.descricao}
                   </p>
@@ -139,7 +141,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-16 flex justify-center">
             <Link href="/projetos">
               <Button variant="outline" size="lg">
                 Ver todos os projetos
@@ -188,6 +190,101 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="section-spacing-y w-full">
+        <div className="container mx-auto">
+          <h2 className="element-spacing text-center text-3xl font-bold tracking-tight sm:text-4xl">
+            O Que Nossos Clientes Dizem
+          </h2>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-lg bg-white p-8 shadow-md dark:bg-neutral-800">
+              <div className="mb-6 flex items-center">
+                <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
+                  <Image
+                    src="/pfp_person (1).jpg"
+                    alt="João Silva"
+                    width={48}
+                    height={48}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold">João P. Hilterberg</p>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">Diretor de Marketing, Empresa XYZ</p>
+                </div>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                "Eduardo criou um balão incrível para nosso evento de lançamento. O impacto visual foi além das nossas expectativas, e a equipe foi extremamente profissional."
+              </p>
+            </div>
+            <div className="rounded-lg bg-white p-8 shadow-md dark:bg-neutral-800">
+              <div className="mb-6 flex items-center">
+                <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
+                  <Image
+                    src="/pfp_person (2).jpg"
+                    alt="Ana Oliveira"
+                    width={48}
+                    height={48}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold">Nana Silvenato</p>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">Organizadora de Eventos</p>
+                </div>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                "Já trabalhamos com Eduardo em diversos eventos. Seus balões são sempre de altíssima qualidade e causam um impacto visual impressionante. Recomendo sem hesitar."
+              </p>
+            </div>
+            <div className="rounded-lg bg-white p-8 shadow-md dark:bg-neutral-800">
+              <div className="mb-6 flex items-center">
+                <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
+                  <Image
+                    src="/pfp_person (3).jpg"
+                    alt="Carlos Santos"
+                    width={48}
+                    height={48}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold">Carlinhos Santos</p>
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">CEO, Empresa ABC</p>
+                </div>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                "A criatividade e qualidade técnica do Eduardo são incomparáveis. O balão personalizado que ele criou para nossa marca se destacou em todos os eventos que participamos."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-spacing-y w-full bg-primary text-white dark:bg-primary-dark">
+        <div className="container mx-auto text-center">
+          <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
+            Pronto para criar algo incrível?
+          </h2>
+          <p className="mx-auto mb-8 max-w-3xl text-lg text-white/80">
+            Entre em contato hoje mesmo e vamos transformar sua ideia em uma obra de arte gigante que impressionará a todos.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contato">
+              <Button size="lg" className="bg-white !text-primary hover:bg-white/90">
+                Entre em contato
+              </Button>
+            </Link>
+            <Link href="/projetos">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                Ver projetos
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
