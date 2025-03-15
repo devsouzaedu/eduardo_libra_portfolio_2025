@@ -218,7 +218,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-neutral-600 dark:text-neutral-300">
-                "Eduardo criou um balão incrível para nosso evento de lançamento. O impacto visual foi além das nossas expectativas, e a equipe foi extremamente profissional."
+                &ldquo;Eduardo criou um balão incrível para nosso evento de lançamento. O impacto visual foi além das nossas expectativas, e a equipe foi extremamente profissional.&rdquo;
               </p>
             </div>
             <div className="rounded-lg bg-white p-8 shadow-md dark:bg-neutral-800">
@@ -238,7 +238,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-neutral-600 dark:text-neutral-300">
-                "Já trabalhamos com Eduardo em diversos eventos. Seus balões são sempre de altíssima qualidade e causam um impacto visual impressionante. Recomendo sem hesitar."
+                &ldquo;Já trabalhamos com Eduardo em diversos eventos. Seus balões são sempre de altíssima qualidade e causam um impacto visual impressionante. Recomendo sem hesitar.&rdquo;
               </p>
             </div>
             <div className="rounded-lg bg-white p-8 shadow-md dark:bg-neutral-800">
@@ -258,7 +258,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-neutral-600 dark:text-neutral-300">
-                "A criatividade e qualidade técnica do Eduardo são incomparáveis. O balão personalizado que ele criou para nossa marca se destacou em todos os eventos que participamos."
+                &ldquo;A criatividade e qualidade técnica do Eduardo são incomparáveis. O balão personalizado que ele criou para nossa marca se destacou em todos os eventos que participamos.&rdquo;
               </p>
             </div>
           </div>

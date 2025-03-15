@@ -18,48 +18,18 @@ type BlogPost = {
 };
 
 // Array de posts do blog com imagens reais
-const blogPosts = [
-  {
-    id: 1,
-    titulo: "A História dos Balões Special Shape",
-    resumo: "Conheça a evolução dos balões de ar quente em formatos especiais e como eles revolucionaram eventos pelo mundo.",
-    data: "15/03/2024",
-    autor: "Eduardo Libra",
-    imagem: "/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg"
-  },
-  {
-    id: 2,
-    titulo: "Balões de Ar Quente em Eventos Corporativos",
-    resumo: "Como os balões de ar quente podem transformar a experiência de marca em eventos corporativos.",
-    data: "10/03/2024",
-    autor: "Eduardo Libra",
-    imagem: "/baloes_2.jpg"
-  },
-  {
-    id: 3,
-    titulo: "O Processo de Criação de um Balão Special Shape",
-    resumo: "Descubra as etapas de design e construção de um balão de ar quente em formato especial.",
-    data: "05/03/2024",
-    autor: "Eduardo Libra",
-    imagem: "/cuckoo_relogio_balloon.jpg"
-  },
-  {
-    id: 4,
-    titulo: "Balão Relógio: Um Ícone nos Céus",
-    resumo: "A história por trás da criação do famoso balão em formato de relógio e seu impacto visual.",
-    data: "28/02/2024",
-    autor: "Eduardo Libra",
-    imagem: "/tick_tock_special_shaped_eduardo_libra.jpg"
-  },
-  {
-    id: 5,
-    titulo: "Inovações em Balões Temáticos",
-    resumo: "As mais recentes inovações tecnológicas na criação de balões temáticos para eventos.",
-    data: "20/02/2024",
-    autor: "Eduardo Libra",
-    imagem: "/bola_de_basquete_balloon.jpg"
-  }
-];
+// Esta variável não está sendo utilizada, então está comentada para evitar erros
+// const blogPosts = [
+//   {
+//     id: 1,
+//     titulo: "A História dos Balões Special Shape",
+//     resumo: "Conheça a evolução dos balões de ar quente em formatos especiais e como eles revolucionaram eventos pelo mundo.",
+//     data: "15/03/2024",
+//     autor: "Eduardo Libra",
+//     imagem: "/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg"
+//   },
+//   ... outros posts
+// ];
 
 // Lista estática de posts para começar (será misturada com posts do localStorage)
 const staticPosts = [

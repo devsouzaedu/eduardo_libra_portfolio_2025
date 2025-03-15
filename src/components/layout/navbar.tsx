@@ -1,15 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export function Navbar() {
-  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
-
-  // After mounting, we can access the window object and set mounted to true
-  useEffect(() => setMounted(true), []);
 
   const isActive = (path: string) => {
     return pathname === path;
