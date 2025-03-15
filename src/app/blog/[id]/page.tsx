@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 
 type BlogPost = {
   id: string;
@@ -47,13 +47,17 @@ const staticPosts = [
   },
 ];
 
-export default function BlogPostPage({ params }: { params: { id: string } }) {
+export default function BlogPostPage() {
+  const params = useParams();
   const [post, setPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPost = () => {
       setLoading(true);
+      
+      // Obter o ID do post dos parâmetros da URL
+      const postId = params.id as string;
       
       // Primeiro, procura nos posts do localStorage
       const storedPosts = localStorage.getItem("blogPosts");
@@ -68,11 +72,11 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
       }
       
       // Procura por ID em posts locais
-      let foundPost = localPosts.find(post => post.id === params.id);
+      let foundPost = localPosts.find(post => post.id === postId);
       
       // Se não encontrar, procura nos posts estáticos
       if (!foundPost) {
-        foundPost = staticPosts.find(post => post.id === params.id);
+        foundPost = staticPosts.find(post => post.id === postId);
       }
       
       if (foundPost) {
@@ -86,7 +90,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
     };
     
     fetchPost();
-  }, [params.id]);
+  }, [params]);
 
   const formatDate = (dateString: string) => {
     const options: Intl.DateTimeFormatOptions = {
