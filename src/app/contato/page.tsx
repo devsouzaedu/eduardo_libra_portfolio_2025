@@ -7,21 +7,108 @@ export default function ContatoPage() {
   return (
     <div className="container mx-auto section-spacing">
       <div className="text-center element-spacing">
-        <h1 className="text-4xl font-bold mb-6">Contato</h1>
+        <h1 className="text-4xl font-bold mb-6">Solicite seu Orçamento</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Entre em contato para discutir seu próximo projeto de arte inflável ou balões personalizados
+          Entre em contato para discutir sua próxima obra de arte inflável gigante personalizada
         </p>
+      </div>
+
+      {/* Formulário de Orçamento */}
+      <div className="bg-neutral-50 dark:bg-neutral-900 p-12 rounded-lg mb-16 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-8 text-center">Solicite um Orçamento Personalizado</h2>
+        <div className="space-y-6">
+          <div>
+            <label htmlFor="tipo" className="block text-sm font-medium mb-2">Tipo de Arte Inflável</label>
+            <select id="tipo" className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2">
+              <option value="">Selecione uma opção</option>
+              <option value="escultura">Escultura Inflável Gigante</option>
+              <option value="instalacao">Instalação Artística Inflável</option>
+              <option value="publicidade">Peça Publicitária Inflável</option>
+              <option value="evento">Arte Inflável para Evento</option>
+              <option value="outro">Outro (especifique abaixo)</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="dimensoes" className="block text-sm font-medium mb-2">Dimensões Aproximadas</label>
+            <select id="dimensoes" className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2">
+              <option value="">Selecione uma opção</option>
+              <option value="pequeno">Pequeno (até 3 metros)</option>
+              <option value="medio">Médio (3 a 8 metros)</option>
+              <option value="grande">Grande (8 a 15 metros)</option>
+              <option value="gigante">Gigante (acima de 15 metros)</option>
+              <option value="outro">Outro (especifique abaixo)</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="localizacao" className="block text-sm font-medium mb-2">Localização de Instalação</label>
+            <select id="localizacao" className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2">
+              <option value="">Selecione uma opção</option>
+              <option value="interno">Ambiente Interno</option>
+              <option value="externo">Ambiente Externo</option>
+              <option value="misto">Misto (Interno e Externo)</option>
+              <option value="outro">Outro (especifique abaixo)</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="descricao" className="block text-sm font-medium mb-2">Descreva seu Projeto</label>
+            <textarea
+              id="descricao"
+              rows={5}
+              className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2"
+              placeholder="Descreva detalhes do seu projeto, referências visuais, prazo desejado, etc."
+            ></textarea>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="nome" className="block text-sm font-medium mb-2">Seu Nome</label>
+              <input
+                type="text"
+                id="nome"
+                className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium mb-2">Seu Email</label>
+              <input
+                type="email"
+                id="email"
+                className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="telefone" className="block text-sm font-medium mb-2">Seu Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2"
+              />
+            </div>
+            <div>
+              <label htmlFor="empresa" className="block text-sm font-medium mb-2">Empresa (se aplicável)</label>
+              <input
+                type="text"
+                id="empresa"
+                className="w-full rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 px-3 py-2"
+              />
+            </div>
+          </div>
+          <Button className="w-full bg-primary hover:bg-primary/90 text-white border-primary hover:border-primary/90 py-6 text-lg">
+            Enviar Solicitação de Orçamento
+          </Button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start max-w-5xl mx-auto">
         {/* Seção de Contato */}
         <div className="bg-card p-10 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-8 text-center">Entre em Contato</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">Contato Direto</h2>
           <div className="space-y-8">
             <div className="text-center mb-10">
               <p className="mb-8">Prefere falar diretamente? Entre em contato pelo WhatsApp:</p>
               <a 
-                href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+conversar+mais+sobre&type=phone_number&app_absent=0" 
+                href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+conversar+sobre+uma+obra+de+arte+inflável&type=phone_number&app_absent=0" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full"
@@ -55,7 +142,7 @@ export default function ContatoPage() {
               <div>
                 <p className="font-medium text-lg">WhatsApp</p>
                 <a 
-                  href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+conversar+mais+sobre&type=phone_number&app_absent=0" 
+                  href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+conversar+sobre+uma+obra+de+arte+inflável&type=phone_number&app_absent=0" 
                   className="text-muted-foreground hover:text-primary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -90,43 +177,45 @@ export default function ContatoPage() {
         </div>
       </div>
 
-      {/* Imagem Decorativa */}
-      <div className="mt-24 relative h-80 md:h-96 rounded-lg overflow-hidden">
-        <Image
-          src="/baloes_2.jpg"
-          alt="Balões coloridos"
-          fill
-          className="object-cover"
-        />
-      </div>
-
-      {/* Galeria de Imagens */}
+      {/* Seção de Exemplos de Projetos */}
       <div className="mt-24">
-        <h2 className="text-2xl font-bold mb-12 text-center">Galeria</h2>
+        <h2 className="text-2xl font-bold mb-8 text-center">Exemplos de Obras de Arte Infláveis</h2>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
+          Confira alguns exemplos de nossas esculturas infláveis gigantes personalizadas
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="relative h-72 rounded-lg overflow-hidden">
             <Image
               src="/cuckoo_relogio_balloon.jpg"
-              alt="Balão em formato de relógio cuco"
+              alt="Escultura inflável gigante"
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <p className="text-white p-4 font-medium">Escultura Inflável para Exposição</p>
+            </div>
           </div>
           <div className="relative h-72 rounded-lg overflow-hidden">
             <Image
               src="/f1_ballooon.jpg"
-              alt="Balão em formato de carro de F1"
+              alt="Instalação inflável personalizada"
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <p className="text-white p-4 font-medium">Instalação Inflável para Evento</p>
+            </div>
           </div>
           <div className="relative h-72 rounded-lg overflow-hidden">
             <Image
               src="/bola_de_basquete_balloon.jpg"
-              alt="Balão em formato de bola de basquete"
+              alt="Arte inflável para campanha publicitária"
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <p className="text-white p-4 font-medium">Arte Inflável para Publicidade</p>
+            </div>
           </div>
         </div>
       </div>
