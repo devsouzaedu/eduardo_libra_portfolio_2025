@@ -20,7 +20,7 @@ export default function PalestraVivencial() {
 
       {/* Conteúdo textual fora da imagem */}
       <div className="text-center mb-10">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
           Palestra Vivencial para Empresas com Balão de Ar Quente
         </h1>
         <div className="flex justify-center gap-4 flex-wrap">

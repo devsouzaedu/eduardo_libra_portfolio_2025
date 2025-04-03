@@ -199,7 +199,7 @@ body {
   
   /* Container com margens laterais mais amigáveis para mobile */
   .container-mobile-friendly {
-    @apply w-full max-w-[1200px] px-2 sm:px-4 md:px-6 mx-auto;
+    @apply w-full max-w-full px-0 mx-auto;
   }
   
   /* Botões responsivos que se adaptam melhor em mobile */

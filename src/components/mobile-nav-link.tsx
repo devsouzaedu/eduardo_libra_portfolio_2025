@@ -13,10 +13,10 @@ export function MobileNavLink({ href, active, children, onClick }: MobileNavLink
     <Link
       href={href}
       className={cn(
-        'flex items-center py-2 px-3 text-lg font-medium rounded-md transition-colors',
+        'flex items-center py-3 px-4 text-xl font-medium rounded-md transition-all duration-200',
         active
-          ? 'bg-blue-50 text-blue-600'
-          : 'text-gray-700 hover:bg-gray-100'
+          ? 'bg-primary-light text-white'
+          : 'text-white/80 hover:bg-primary-light/30 hover:text-white'
       )}
       onClick={onClick}
     >
