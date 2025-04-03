@@ -37,6 +37,14 @@ export function Navbar() {
             Projetos
           </Link>
           <Link
+            href="/cativos"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/cativos") ? "text-primary dark:text-accent" : "text-muted-foreground hover:text-primary dark:hover:text-accent"
+            }`}
+          >
+            Cativeiros
+          </Link>
+          <Link
             href="/blog"
             className={`text-sm font-medium transition-colors ${
               isActive("/blog") ? "text-primary dark:text-accent" : "text-muted-foreground hover:text-primary dark:hover:text-accent"
