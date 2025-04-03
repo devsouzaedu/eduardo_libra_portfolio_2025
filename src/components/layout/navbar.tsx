@@ -84,22 +84,11 @@ export function Navbar() {
             </div>
           </SheetContent>
         </Sheet>
-        <Link href="/" className="flex items-center justify-center gap-2 mr-6">
-          <Image
-            src="/logo.png"
-            width={60}
-            height={60}
-            alt="Logo Eduardo Libra"
-            className="hidden md:block"
-          />
-          <Image
-            src="/logo.png"
-            width={45}
-            height={45}
-            alt="Logo Eduardo Libra"
-            className="block md:hidden"
-          />
-          <span className="text-xl font-bold hidden lg:block">Eduardo Libra</span>
+        <Link
+          href="/"
+          className="ml-2 flex items-center gap-2 text-xl font-bold lg:ml-0"
+        >
+          <span className="text-xl font-bold">Eduardo Libra</span>
         </Link>
         <nav className="ml-auto hidden lg:flex gap-6">
           <DesktopNavLink href="/" active={pathname === "/"}>
