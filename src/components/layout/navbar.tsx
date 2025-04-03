@@ -42,7 +42,7 @@ export function Navbar() {
               isActive("/cativos") ? "text-primary dark:text-accent" : "text-muted-foreground hover:text-primary dark:hover:text-accent"
             }`}
           >
-            Cativeiros
+            Voo Cativo
           </Link>
           <Link
             href="/blog"

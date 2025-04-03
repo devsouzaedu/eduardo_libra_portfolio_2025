@@ -19,9 +19,9 @@ export default function Cativos() {
     <div className="container mx-auto py-12 px-4">
       {/* Hero Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Cativeiros e Atividades Vivenciais</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">Voo Cativo</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Experiências transformadoras e inesquecíveis utilizando o balonismo como ferramenta de desenvolvimento pessoal e profissional.
+          Experiências transformadoras com balões de ar quente ancorados, oferecendo segurança e diversão para eventos, treinamentos corporativos e desenvolvimento de equipes.
         </p>
       </div>
 
@@ -56,8 +56,8 @@ export default function Cativos() {
       </div>
 
       {/* Seção de Benefícios */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 md:p-12 rounded-xl mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Por que escolher nossas experiências vivenciais?</h2>
+      <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-8 md:p-12 rounded-xl mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-center">Por que escolher nossos voos cativos?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -97,16 +97,16 @@ export default function Cativos() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2">Flexibilidade de Locais</h3>
-            <p>Podemos realizar as atividades em sua empresa ou em locais específicos conforme a necessidade.</p>
+            <p>Podemos realizar os voos cativos em sua empresa ou em locais específicos conforme a necessidade.</p>
           </div>
         </div>
       </div>
 
       {/* CTA Final */}
       <div className="bg-white dark:bg-neutral-800 p-8 md:p-12 rounded-xl text-center shadow-md">
-        <h2 className="text-3xl font-bold mb-6">Transforme sua equipe com experiências memoráveis</h2>
+        <h2 className="text-3xl font-bold mb-6">Proporcione experiências inesquecíveis com voos cativos</h2>
         <p className="text-lg mb-8 max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
-          Entre em contato hoje mesmo para conhecer todas as opções de atividades que oferecemos e personalize uma experiência para as necessidades específicas da sua empresa.
+          Entre em contato hoje mesmo para conhecer todas as opções que oferecemos e personalize uma experiência para as necessidades específicas da sua empresa ou evento.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/contato">
@@ -115,7 +115,7 @@ export default function Cativos() {
             </Button>
           </Link>
           <a 
-            href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+obter+mais+informações+sobre+os+cativeiros+e+atividades+vivenciais" 
+            href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+obter+mais+informações+sobre+voos+cativos+com+balão+de+ar+quente" 
             target="_blank" 
             rel="noopener noreferrer"
           >

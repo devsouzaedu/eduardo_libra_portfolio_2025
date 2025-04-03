@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cativeiros e Atividades Vivenciais | Eduardo Libra",
-  description: "Palestras vivenciais e experiências com balões de ar quente para desenvolvimento de equipes e conscientização sobre segurança no trabalho.",
-  keywords: ['Palestra Vivencial', 'Balões de ar quente', 'Treinamento de equipes', 'Desenvolvimento profissional', 'Segurança no trabalho', 'Dinâmicas de grupo'],
+  title: "Voo Cativo com Balão de Ar Quente | Eduardo Libra",
+  description: "Experiências memoráveis com balões de ar quente ancorados para eventos, treinamentos corporativos e atividades personalizadas.",
+  keywords: ['Voo Cativo', 'Balão de ar quente', 'Eventos corporativos', 'Treinamento de equipes', 'Experiência com balão', 'Balão ancorado'],
 };
 
 export default function CativosLayout({
