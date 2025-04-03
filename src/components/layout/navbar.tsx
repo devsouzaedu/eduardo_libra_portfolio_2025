@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { MobileNavLink } from "../mobile-nav-link";
 import { DesktopNavLink } from "../desktop-nav-link";
 import { Menu } from "lucide-react";
