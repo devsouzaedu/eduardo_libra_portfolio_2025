@@ -6,8 +6,9 @@ import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { MobileNavLink } from "@/components/mobile-nav-link";
-import { DesktopNavLink } from "@/components/desktop-nav-link";
+import { MobileNavLink } from "../mobile-nav-link";
+import { DesktopNavLink } from "../desktop-nav-link";
+import { Menu } from "lucide-react";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -23,7 +24,7 @@ export function Navbar() {
               size="icon"
               className="mr-2 block lg:hidden"
             >
-              <MenuIcon className="h-6 w-6" />
+              <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle Menu</span>
             </Button>
           </SheetTrigger>
