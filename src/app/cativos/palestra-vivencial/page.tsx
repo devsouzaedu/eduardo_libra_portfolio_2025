@@ -6,250 +6,125 @@ import Link from 'next/link';
 
 export default function PalestraVivencial() {
   return (
-    <div className="container mx-auto py-12 px-4">
-      {/* Hero Section - Apenas imagem */}
-      <div className="relative rounded-xl overflow-hidden h-[400px] md:h-[500px] mb-8">
-        <Image 
+    <main className="container-mobile-friendly min-h-screen bg-white">
+      {/* Hero Section com imagem */}
+      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] mt-4 mb-8 overflow-hidden rounded-lg shadow-lg">
+        <Image
           src="/palestra_vivencial_balao.jpeg"
           alt="Palestra Vivencial com Balão de Ar Quente"
           fill
-          className="object-cover"
+          className="object-contain"
           priority
         />
       </div>
 
-      {/* Título e descrição (movidos para fora da imagem) */}
+      {/* Conteúdo textual fora da imagem */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Subindo Juntos: Trabalho em Equipe e Segurança no Balonismo
+        <h1 className="heading-responsive text-black mb-6">
+          Palestra Vivencial para Empresas com Balão de Ar Quente
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-          Uma experiência vivencial única para empresas, utilizando a montagem de balões de ar quente como metáfora para trabalho em equipe e segurança
-        </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Link href="/contato">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 text-lg hover:scale-105 transition-all">
-              Solicitar Informações
-            </Button>
-          </Link>
-          <a 
-            href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+obter+mais+informações+sobre+a+palestra+vivencial+com+balão+de+ar+quente" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 px-6 text-lg hover:scale-105 transition-all">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              Falar pelo WhatsApp
-            </Button>
-          </a>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <Button asChild className="btn-responsive bg-blue-600 hover:bg-blue-700">
+            <Link href="/contato">Solicitar Orçamento</Link>
+          </Button>
+          <Button asChild className="btn-responsive bg-amber-500 hover:bg-amber-600">
+            <Link href="/cativos">Conhecer Outros Serviços</Link>
+          </Button>
         </div>
       </div>
 
-      {/* Objetivos da Palestra */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Objetivos da Palestra</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path>
-                <path d="M16 12v-6"></path>
-                <path d="M12 12V6"></path>
-                <path d="M8 12V8"></path>
-              </svg>
+      {/* Objetivos */}
+      <section className="py-responsive">
+        <div className="card-responsive bg-white text-black mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-600">Objetivos</h2>
+          <p className="text-responsive mb-2">
+            Promover uma experiência única de aprendizado envolvendo balões de ar quente para desenvolver:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-responsive">
+            <li>Trabalho em equipe e colaboração</li>
+            <li>Comunicação eficaz</li>
+            <li>Gestão de risco e segurança</li>
+            <li>Liderança e tomada de decisão</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Roteiro das Atividades */}
+      <section className="py-responsive">
+        <div className="card-responsive bg-white text-black mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-600">Roteiro das Atividades</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-semibold text-black">1. Introdução Teórica (30 min)</h3>
+              <p className="text-responsive">Princípios básicos de funcionamento dos balões, história e importância do trabalho em equipe na operação segura.</p>
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-center text-black">Experiência Prática</h3>
-            <p className="text-center text-gray-800">
-              Proporcionar uma experiência prática de montagem e desmontagem de um balão de ar quente.
-            </p>
-          </div>
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
+            <div>
+              <h3 className="text-xl font-semibold text-black">2. Montagem do Balão (60 min)</h3>
+              <p className="text-responsive">Os participantes são divididos em equipes com funções específicas para a montagem do balão sob orientação do piloto.</p>
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-center text-black">Trabalho em Equipe</h3>
-            <p className="text-center text-gray-800">
-              Destacar a importância do trabalho em equipe, segurança e comunicação eficaz.
-            </p>
-          </div>
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                <path d="m9 12 2 2 4-4"></path>
-              </svg>
+            <div>
+              <h3 className="text-xl font-semibold text-black">3. Inflação e Demonstração (60 min)</h3>
+              <p className="text-responsive">Com a participação de todos, o balão é inflado e erguido, demonstrando o resultado do esforço coletivo.</p>
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-center text-black">Satisfação na Execução</h3>
-            <p className="text-center text-gray-800">
-              Promover agilidade, organização e satisfação ao concluir uma tarefa complexa em conjunto.
-            </p>
+            <div>
+              <h3 className="text-xl font-semibold text-black">4. Reflexão e Debriefing (30 min)</h3>
+              <p className="text-responsive">Discussão sobre as lições aprendidas, desafios superados e aplicações práticas para o ambiente corporativo.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Roteiro da Atividade */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Roteiro da Atividade</h2>
-        
-        <div className="space-y-12">
-          {/* Introdução */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">1</div>
-              <h3 className="text-2xl font-bold text-black">Introdução (15 minutos)</h3>
-            </div>
-            <ul className="list-disc pl-16 space-y-3 text-gray-800">
-              <li>Apresentação rápida sobre o balonismo (história, importância e características).</li>
-              <li>Relação direta entre segurança no trabalho e no balonismo.</li>
-            </ul>
-          </div>
-          
-          {/* Dinâmica Prática */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">2</div>
-              <h3 className="text-2xl font-bold text-black">Dinâmica Prática (60 minutos)</h3>
-            </div>
-            <div className="pl-16">
-              <h4 className="font-semibold text-lg mb-4 text-black">Divisão dos participantes em equipes, com definição clara das funções:</h4>
-              <ul className="list-disc pl-6 space-y-3 mb-6 text-gray-800">
-                <li><strong>Equipe do cesto e cilindros:</strong> montagem de 4 cilindros de gás, maçarico e conexão das mangueiras.</li>
-                <li><strong>Equipe de posicionamento:</strong> verificação de espaço adequado, análise do vento calmo até 16 km/h e definição da direção de montagem.</li>
-                <li><strong>Equipe de inflagem:</strong> uso de ventoinha para inflar o balão com ar frio, coordenação para abrir o tecido.</li>
-                <li><strong>Equipe de segurança e ancoragem:</strong> posicionamento das cordas no cesto para estabilização do balão.</li>
-              </ul>
-              
-              <h4 className="font-semibold text-lg mb-4 text-black">Montagem passo a passo:</h4>
-              <ul className="list-disc pl-6 space-y-3 text-gray-800">
-                <li>Posicionamento do equipamento corretamente, com comunicação eficiente.</li>
-                <li>Conexão correta dos cilindros ao maçarico e ao cesto.</li>
-                <li>Uso da ventoinha para inflar o balão com ar frio.</li>
-                <li>Aquecimento interno com ar quente para levantar o balão na posição vertical.</li>
-                <li>Fechamento correto do teto e posicionamento seguro das cordas de ancoragem.</li>
-              </ul>
-            </div>
-          </div>
-          
-          {/* Encerramento e Reflexão */}
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">3</div>
-              <h3 className="text-2xl font-bold text-black">Encerramento e Reflexão (15 minutos)</h3>
-            </div>
-            <ul className="list-disc pl-16 space-y-3 text-gray-800">
-              <li>Discussão em grupo sobre desafios enfrentados e soluções encontradas.</li>
-              <li>Reflexão sobre como habilidades demonstradas (comunicação, responsabilidade, organização, confiança e liderança) podem ser aplicadas diariamente no ambiente de trabalho.</li>
-              <li>Reforço sobre segurança e prevenção de acidentes como essencial para um ambiente saudável e produtivo.</li>
-              <li>Celebração coletiva ao alcançar o resultado final impressionante: ver o balão montado corretamente.</li>
-            </ul>
-          </div>
+      {/* Resultados Esperados */}
+      <section className="py-responsive">
+        <div className="card-responsive bg-white text-black mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-600">Resultados Esperados</h2>
+          <ul className="list-disc pl-6 space-y-2 text-responsive">
+            <li>Melhora na capacidade de trabalho em equipe</li>
+            <li>Aprimoramento da comunicação entre os membros</li>
+            <li>Compreensão da importância de seguir procedimentos de segurança</li>
+            <li>Desenvolvimento de confiança mútua e cooperação</li>
+            <li>Experiência memorável e diferenciada para os colaboradores</li>
+          </ul>
         </div>
-      </div>
-
-      {/* Resultado Esperado */}
-      <div className="mb-16 bg-gradient-to-r from-blue-400 to-blue-600 text-white p-8 md:p-12 rounded-xl">
-        <h2 className="text-3xl font-bold mb-6 text-center">Resultado Esperado</h2>
-        <p className="text-lg text-center max-w-3xl mx-auto">
-          Participantes sairão da atividade mais conscientes sobre a importância do trabalho seguro e em equipe, com uma experiência marcante de realização conjunta e um exemplo prático e deslumbrante dos resultados que podem ser atingidos com planejamento e cooperação.
-        </p>
-      </div>
+      </section>
 
       {/* Benefícios para Empresas */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Benefícios para Empresas</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <div className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-4 mt-1 flex-shrink-0">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-black">Fortalecimento da Comunicação</h3>
-                <p className="text-gray-800">
-                  Melhora significativa na comunicação entre departamentos e equipes através de uma experiência compartilhada.
-                </p>
-              </div>
+      <section className="py-responsive">
+        <div className="card-responsive bg-white text-black mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-blue-600">Benefícios para Empresas</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-4 border rounded-md shadow-sm">
+              <h3 className="text-lg font-semibold text-black mb-2">Fortalecimento de Equipes</h3>
+              <p className="text-responsive">Atividade que promove conexões genuínas entre os membros da equipe em um ambiente não convencional.</p>
             </div>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <div className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-4 mt-1 flex-shrink-0">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-black">Conscientização sobre Segurança</h3>
-                <p className="text-gray-800">
-                  Reforço prático da importância de procedimentos de segurança e protocolos em qualquer ambiente de trabalho.
-                </p>
-              </div>
+            <div className="p-4 border rounded-md shadow-sm">
+              <h3 className="text-lg font-semibold text-black mb-2">Desenvolvimento de Liderança</h3>
+              <p className="text-responsive">Oportunidade para identificar e nutrir habilidades de liderança em cenários de desafio real.</p>
             </div>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <div className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-4 mt-1 flex-shrink-0">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-black">Desenvolvimento de Liderança</h3>
-                <p className="text-gray-800">
-                  Identificação e desenvolvimento de habilidades de liderança em situações desafiadoras e não convencionais.
-                </p>
-              </div>
+            <div className="p-4 border rounded-md shadow-sm">
+              <h3 className="text-lg font-semibold text-black mb-2">Cultura de Segurança</h3>
+              <p className="text-responsive">Reforço da importância de protocolos de segurança e gestão de riscos de forma vivencial e prática.</p>
             </div>
-          </div>
-          <div className="bg-white p-6 rounded-xl shadow-md">
-            <div className="flex items-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-4 mt-1 flex-shrink-0">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-black">Experiência Memorável</h3>
-                <p className="text-gray-800">
-                  Uma atividade única e diferenciada que será lembrada por muito tempo, reforçando os conceitos trabalhados.
-                </p>
-              </div>
+            <div className="p-4 border rounded-md shadow-sm">
+              <h3 className="text-lg font-semibold text-black mb-2">Experiência Exclusiva</h3>
+              <p className="text-responsive">Atividade diferenciada que ficará marcada na memória dos colaboradores, associando a empresa a experiências positivas.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* CTA Final */}
-      <div className="bg-white p-8 md:p-12 rounded-xl text-center shadow-md">
-        <h2 className="text-3xl font-bold mb-6 text-black">Transforme sua Equipe com uma Experiência Única</h2>
-        <p className="text-lg mb-8 max-w-3xl mx-auto text-gray-800">
-          Entre em contato hoje mesmo para agendar esta palestra vivencial para sua empresa e proporcione aos seus colaboradores uma oportunidade exclusiva de desenvolvimento pessoal e profissional.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/contato">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 text-lg hover:scale-105 transition-all">
-              Solicitar Proposta
-            </Button>
-          </Link>
-          <a 
-            href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi+Eduardo%21+Eu+vim+através+do+site%2C+gostaria+de+obter+mais+informações+sobre+a+palestra+vivencial+com+balão+de+ar+quente" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-3 px-8 text-lg hover:scale-105 transition-all">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              Falar pelo WhatsApp
-            </Button>
-          </a>
+      {/* Call to Action */}
+      <section className="py-responsive mb-12">
+        <div className="card-responsive bg-blue-600 text-white text-center rounded-lg">
+          <h2 className="text-2xl font-bold mb-4">Transforme o Desenvolvimento da Sua Equipe</h2>
+          <p className="text-responsive mb-6">
+            Ofereça uma experiência de aprendizado única que combina aventura, trabalho em equipe e lições práticas para o ambiente corporativo.
+          </p>
+          <Button asChild className="btn-responsive bg-white text-blue-600 hover:bg-gray-100">
+            <Link href="/contato">Agendar Palestra Vivencial</Link>
+          </Button>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 } 
