@@ -91,98 +91,60 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div>
         </div>
         
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-            
-            {/* Conteúdo de texto */}
-            <div className="text-white space-y-8">
-              <div className="space-y-6">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  <span className="block">Infláveis personalizados para</span>
-                  <span className="block text-yellow-300">quem quer <span className="text-yellow-400">vender mais</span></span>
-                  <span className="block">e ser visto</span>
-                </h1>
-                
-                <p className="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-2xl">
-                  Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
-                    Quero meu inflável personalizado →
-                  </Button>
-                </a>
-              </div>
-              
-              {/* Badges de destaque */}
-              <div className="flex flex-wrap gap-4 text-sm">
-                <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
-                  ⚡ <span>Entrega em tempo recorde</span>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
-                  🎨 <span>Design 3D incluso</span>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
-                  ✅ <span>25+ anos de experiência</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Galeria de Infláveis */}
-            <div className="relative">
-              {/* Imagem principal central */}
-              <div className="relative z-10 mx-auto w-80 h-80 md:w-96 md:h-96">
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-                <Image 
-                  src="/inflavel_varios_use.webp" 
-                  alt="Infláveis Promocionais Personalizados"
-                  fill
-                  className="object-contain relative z-10 drop-shadow-2xl"
-                  priority
-                />
-              </div>
-              
-              {/* Imagens flutuantes menores */}
-              <div className="absolute top-0 left-0 w-32 h-32 md:w-40 md:h-40 animate-float-slow">
-                <Image 
-                  src="/tenda_inflavel_use (1).png" 
-                  alt="Tenda Inflável"
-                  fill
-                  className="object-contain drop-shadow-xl"
-                />
-              </div>
-              
-              <div className="absolute top-20 right-0 w-28 h-28 md:w-36 md:h-36 animate-float-delayed">
-                <Image 
-                  src="/roof_top_inflavel_use (1).jpg" 
-                  alt="Balão Rooftop"
-                  fill
-                  className="object-contain rounded-lg drop-shadow-xl"
-                />
-              </div>
-              
-              <div className="absolute bottom-0 left-10 w-24 h-24 md:w-32 md:h-32 animate-float">
-                <Image 
-                  src="/tenda_inflavel_use (3).png" 
-                  alt="Tenda CIMED"
-                  fill
-                  className="object-contain drop-shadow-xl"
-                />
-              </div>
-              
-              <div className="absolute bottom-20 right-10 w-20 h-20 md:w-28 md:h-28 animate-float-slow">
-                <Image 
-                  src="/balao roftop inflavel promocinal use .png" 
-                  alt="Balão Promocional"
-                  fill
-                  className="object-contain drop-shadow-xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+                 <div className="container mx-auto px-4 py-20 relative z-10">
+           <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-12">
+             
+             {/* Imagem Principal */}
+             <div className="relative">
+               <div className="relative z-10 mx-auto w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
+                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                 <Image 
+                   src="/inflavel_varios_use.webp" 
+                   alt="Infláveis Promocionais Personalizados"
+                   fill
+                   className="object-contain relative z-10 drop-shadow-2xl"
+                   priority
+                 />
+               </div>
+             </div>
+             
+             {/* Conteúdo de texto */}
+             <div className="text-white space-y-8 max-w-4xl">
+               <div className="space-y-6">
+                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                   <span className="block">Infláveis personalizados para</span>
+                   <span className="block text-yellow-300">quem quer <span className="text-yellow-400">vender mais</span></span>
+                   <span className="block">e ser visto</span>
+                 </h1>
+                 
+                 <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                   Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
+                 </p>
+               </div>
+               
+               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                 <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer">
+                   <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
+                     Quero meu inflável personalizado →
+                   </Button>
+                 </a>
+               </div>
+               
+               {/* Badges de destaque */}
+               <div className="flex flex-wrap justify-center gap-4 text-sm">
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
+                   ⚡ <span>Entrega em tempo recorde</span>
+                 </div>
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
+                   🎨 <span>Design 3D incluso</span>
+                 </div>
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
+                   ✅ <span>25+ anos de experiência</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
         
         {/* Indicador de scroll */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
