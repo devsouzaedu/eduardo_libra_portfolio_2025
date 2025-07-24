@@ -81,7 +81,7 @@ export default function Home() {
         }}
       />
       
-    <div className="flex flex-col items-center w-full">
+    <div className="w-full">
       {/* Hero Section - Galeria de Infláveis */}
       <section className="relative min-h-screen w-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 overflow-hidden"
         style={{ minHeight: '100vh' }}>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div>
         </div>
         
-        <div className="container mx-auto safe-area-mobile py-8 sm:py-12 lg:py-16 relative z-10">
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
           {/* Layout Mobile - Vertical */}
           <div className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] text-center space-y-6 sm:space-y-8 lg:hidden">
             
@@ -214,7 +214,7 @@ export default function Home() {
 
       {/* Seção de Serviços Principais */}
       <section className="py-16 w-full bg-white">
-        <div className="container mx-auto safe-area-mobile">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
               Nossos Infláveis Promocionais
@@ -408,7 +408,7 @@ export default function Home() {
 
        {/* Galeria de Produtos com as Imagens Fornecidas */}
        <section className="py-12 sm:py-16 w-full bg-white">
-         <div className="container mx-auto safe-area-mobile">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-8 sm:mb-12">
              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 px-2 sm:px-4 leading-tight">
                Galeria de Infláveis Promocionais
@@ -536,7 +536,7 @@ export default function Home() {
 
        {/* Seção de Experiência e Credibilidade */}
        <section className="py-12 sm:py-16 lg:py-20 w-full bg-gradient-to-r from-blue-900 to-purple-900 text-white">
-         <div className="container mx-auto safe-area-mobile">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-12 sm:mb-16">
              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 px-2 leading-tight">
                Por que escolher nossos Infláveis Promocionais?
@@ -570,7 +570,7 @@ export default function Home() {
 
        {/* Seção de Diferenciais Técnicos */}
        <section className="py-20 w-full bg-white">
-         <div className="container mx-auto safe-area-mobile">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-16">
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                Tecnologia e Qualidade em Cada Projeto
@@ -637,7 +637,7 @@ export default function Home() {
        {/* Seção de Formulário de Orçamento */}
        <section className="py-12 sm:py-16 w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
          style={{ backgroundColor: '#1e293b' }}>
-         <div className="container mx-auto safe-area-mobile">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
            <div className="max-w-6xl mx-auto">
              <div className="text-center mb-8 sm:mb-12">
                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-2 sm:px-4 leading-tight">
@@ -870,7 +870,7 @@ export default function Home() {
 
        {/* CTA Final */}
        <section className="py-20 w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-         <div className="container mx-auto safe-area-mobile text-center">
+         <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
            <h2 className="text-4xl md:text-5xl font-bold mb-6">
              Pronto para destacar sua marca?
            </h2>

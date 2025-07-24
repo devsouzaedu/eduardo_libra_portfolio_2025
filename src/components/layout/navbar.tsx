@@ -15,12 +15,12 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="container-mobile-friendly">
+    <>
       <header className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
         bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100
       `}>
-        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 w-full items-center justify-between">
             {/* Logo e Menu Mobile */}
             <div className="flex items-center">
@@ -252,6 +252,6 @@ export function Navbar() {
       
       {/* Spacer para compensar o navbar fixo */}
       <div className="h-20"></div>
-    </div>
+    </>
   );
 } 
