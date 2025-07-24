@@ -110,6 +110,20 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-T4STLT8P');
           `}
         </Script>
+        
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16939666429"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16939666429');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <noscript>
