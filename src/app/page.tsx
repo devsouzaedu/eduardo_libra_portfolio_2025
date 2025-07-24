@@ -83,7 +83,8 @@ export default function Home() {
       
     <div className="flex flex-col items-center w-full">
       {/* Hero Section - Galeria de Infláveis */}
-      <section className="relative min-h-screen w-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 overflow-hidden">
+      <section className="relative min-h-screen w-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 overflow-hidden"
+        style={{ minHeight: '100vh' }}>
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
@@ -91,13 +92,13 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div>
         </div>
         
-                 <div className="container mx-auto px-4 py-20 relative z-10">
+                 <div className="container mx-auto px-6 py-16 relative z-10">
            {/* Layout Mobile - Vertical */}
-           <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-12 lg:hidden">
+           <div className="flex flex-col items-center justify-center min-h-[85vh] text-center space-y-8 lg:hidden">
              
              {/* Imagem Principal Mobile */}
-             <div className="relative">
-               <div className="relative z-10 mx-auto w-80 h-80 md:w-96 md:h-96">
+             <div className="relative mt-4">
+               <div className="relative z-10 mx-auto w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
                  <Image 
                    src="/inflavel_varios_use.webp" 
@@ -110,37 +111,37 @@ export default function Home() {
              </div>
              
              {/* Conteúdo de texto Mobile */}
-             <div className="text-white space-y-8 max-w-4xl">
-               <div className="space-y-6">
-                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+             <div className="text-white space-y-6 max-w-4xl px-2">
+               <div className="space-y-4">
+                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
                    <span className="block">Infláveis personalizados para</span>
                    <span className="block text-yellow-300">quem quer <span className="text-yellow-400">vender mais</span></span>
                    <span className="block">e ser visto</span>
                  </h1>
                  
-                 <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                 <p className="text-lg sm:text-xl md:text-2xl text-blue-100 leading-relaxed px-4">
                    Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
                  </p>
                </div>
                
-               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                 <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer">
-                   <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
+               <div className="flex flex-col gap-4 justify-center px-4">
+                 <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer" className="w-full">
+                   <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-4 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
                      Quero meu inflável personalizado →
                    </Button>
                  </a>
                </div>
                
                {/* Badges de destaque Mobile */}
-               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
-                   ⚡ <span>Entrega em tempo recorde</span>
+               <div className="flex flex-wrap justify-center gap-3 text-xs sm:text-sm px-4">
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
+                   ⚡ <span>Entrega rápida</span>
                  </div>
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
                    🎨 <span>Design 3D incluso</span>
                  </div>
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 flex items-center gap-2">
-                   ✅ <span>25+ anos de experiência</span>
+                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
+                   ✅ <span>25+ anos</span>
                  </div>
                </div>
              </div>
@@ -211,13 +212,13 @@ export default function Home() {
       </section>
 
       {/* Seção de Serviços Principais */}
-      <section className="py-20 w-full bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <section className="py-16 w-full bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
               Nossos Infláveis Promocionais
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Fabricamos infláveis promocionais personalizados de 2 a 30 metros de altura, 
               com qualidade premium e impacto visual garantido para sua marca.
             </p>
@@ -348,13 +349,13 @@ export default function Home() {
       </section>
 
              {/* Seção Por que escolher nossos infláveis */}
-       <section className="py-20 w-full bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
-         <div className="container mx-auto px-4">
-           <div className="text-center mb-16">
-             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+       <section className="py-16 w-full bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
+         <div className="container mx-auto px-6">
+           <div className="text-center mb-12">
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-4">
                Por que escolher nossos Infláveis Promocionais?
              </h2>
-             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+             <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-4">
                Mais de 25 anos de experiência na fabricação de balões de ar quente e infláveis promocionais, 
                garantindo qualidade premium e resultados excepcionais.
              </p>
@@ -405,20 +406,20 @@ export default function Home() {
        </section>
 
        {/* Galeria de Produtos com as Imagens Fornecidas */}
-       <section className="py-20 w-full bg-white">
-         <div className="container mx-auto px-4">
-           <div className="text-center mb-16">
-             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+       <section className="py-16 w-full bg-white">
+         <div className="container mx-auto px-6">
+           <div className="text-center mb-12">
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
                Galeria de Infláveis Promocionais
              </h2>
-             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                Conheça alguns dos nossos projetos realizados. Cada inflável é único e personalizado 
                para atender às necessidades específicas de nossos clientes.
              </p>
            </div>
 
            {/* Grid de Imagens */}
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
              {/* Tendas Infláveis */}
              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
                <div className="relative h-80">
@@ -633,22 +634,23 @@ export default function Home() {
        </section>
 
        {/* Seção de Formulário de Orçamento */}
-       <section className="py-20 w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-         <div className="container mx-auto px-4">
+       <section className="py-16 w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
+         style={{ backgroundColor: '#1e293b' }}>
+         <div className="container mx-auto px-6">
            <div className="max-w-6xl mx-auto">
-             <div className="text-center mb-16">
-               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+             <div className="text-center mb-12">
+               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-4">
                  Solicite seu Orçamento Gratuito
                </h2>
-               <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+               <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-4">
                  Preencha o formulário abaixo e receba um orçamento personalizado para seu inflável promocional. 
                  Resposta em até 24 horas!
                </p>
              </div>
 
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                {/* Formulário */}
-               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/20">
                  <form className="space-y-6">
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                      <div>
@@ -771,7 +773,7 @@ export default function Home() {
                    <Button 
                      type="submit" 
                      size="lg" 
-                     className="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-4 text-lg font-bold rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105"
+                     className="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-4 text-base sm:text-lg font-bold rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105"
                    >
                      Solicitar Orçamento Gratuito
                    </Button>

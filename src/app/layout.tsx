@@ -44,6 +44,17 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
+  icons: {
+    icon: "/logo_novo_real_oficial.jpeg",
+    shortcut: "/logo_novo_real_oficial.jpeg",
+    apple: "/logo_novo_real_oficial.jpeg",
+  },
   openGraph: {
     title: "Eduardo Libra - Infláveis Promocionais de Alto Impacto",
     description: "Destaque sua marca com infláveis promocionais personalizados. Tendas infláveis, balões rooftop e soluções criativas para sua campanha. Orçamento gratuito!",
@@ -51,10 +62,10 @@ export const metadata: Metadata = {
     siteName: "Eduardo Libra",
     images: [
       {
-        url: "/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg",
+        url: "/logo_novo_real_oficial.jpeg",
         width: 1200,
         height: 630,
-        alt: "Infláveis Promocionais Eduardo Libra",
+        alt: "Eduardo Libra - Infláveis Promocionais",
       },
     ],
     locale: "pt_BR",
@@ -64,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Eduardo Libra - Infláveis Promocionais de Alto Impacto",
     description: "Destaque sua marca com infláveis promocionais personalizados. Tendas infláveis, balões rooftop e soluções criativas.",
-    images: ["/background_baloes_especiais_shape_special_hotairballoon_eduardolibra.jpg"],
+    images: ["/logo_novo_real_oficial.jpeg"],
   },
   robots: {
     index: true,

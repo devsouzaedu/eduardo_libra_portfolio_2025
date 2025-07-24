@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -79,9 +80,18 @@ export function Navbar() {
                     <div className="relative z-10">
                       <Link
                         href="/"
-                        className="flex items-center mb-8 group"
+                        className="flex items-center gap-3 mb-8 group"
                         onClick={() => setIsMenuOpen(false)}
                       >
+                        <div className="relative w-14 h-14 transition-all duration-200 group-hover:scale-105">
+                          <Image
+                            src="/logo_novo_real_oficial.jpeg"
+                            alt="Eduardo Libra - Infláveis Promocionais"
+                            fill
+                            className="object-contain rounded-lg"
+                            priority
+                          />
+                        </div>
                         <span className="text-3xl font-bold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-200">
                           Eduardo Libra
                         </span>
@@ -159,6 +169,15 @@ export function Navbar() {
                 href="/"
                 className="flex items-center gap-2 group"
               >
+                <div className="relative w-12 h-12 transition-all duration-200 group-hover:scale-105">
+                  <Image
+                    src="/logo_novo_real_oficial.jpeg"
+                    alt="Eduardo Libra - Infláveis Promocionais"
+                    fill
+                    className="object-contain rounded-lg"
+                    priority
+                  />
+                </div>
                 <span className={`
                   text-2xl font-bold transition-all duration-200 group-hover:scale-105
                   ${isScrolled 
