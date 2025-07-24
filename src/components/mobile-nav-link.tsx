@@ -13,14 +13,21 @@ export function MobileNavLink({ href, active, children, onClick }: MobileNavLink
     <Link
       href={href}
       className={cn(
-        'flex items-center py-3 px-4 text-xl font-medium rounded-md transition-all duration-200',
+        'group flex items-center py-4 px-6 text-lg font-medium rounded-xl transition-all duration-300 ease-out transform',
+        'hover:scale-105 hover:translate-x-2 active:scale-95',
         active
-          ? 'bg-primary-light text-white'
-          : 'text-white/80 hover:bg-primary-light/30 hover:text-white'
+          ? 'bg-white/20 text-white shadow-lg backdrop-blur-sm border border-white/30'
+          : 'text-white/80 hover:bg-white/10 hover:text-white hover:shadow-md backdrop-blur-sm'
       )}
       onClick={onClick}
     >
-      {children}
+      <span className="relative">
+        {children}
+        {/* Indicador ativo */}
+        {active && (
+          <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+        )}
+      </span>
     </Link>
   );
 } 
