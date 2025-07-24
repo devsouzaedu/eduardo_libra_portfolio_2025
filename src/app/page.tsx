@@ -96,7 +96,7 @@ export default function Home() {
              
              {/* Imagem Principal */}
              <div className="relative">
-               <div className="relative z-10 mx-auto w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
+               <div className="relative z-10 mx-auto w-96 h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem]">
                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
                  <Image 
                    src="/inflavel_varios_use.webp" 
@@ -291,60 +291,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção Por que escolher nossos infláveis */}
-      <section className="py-20 w-full bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Por que escolher nossos Infláveis Promocionais?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Mais de 25 anos de experiência na fabricação de balões de ar quente e infláveis promocionais, 
-              garantindo qualidade premium e resultados excepcionais.
-            </p>
-          </div>
+             {/* Seção Por que escolher nossos infláveis */}
+       <section className="py-20 w-full bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
+         <div className="container mx-auto px-4">
+           <div className="text-center mb-16">
+             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+               Por que escolher nossos Infláveis Promocionais?
+             </h2>
+             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+               Mais de 25 anos de experiência na fabricação de balões de ar quente e infláveis promocionais, 
+               garantindo qualidade premium e resultados excepcionais.
+             </p>
+           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Produção Rápida</h3>
-              <p className="text-gray-600">Menor prazo de entrega do mercado com qualidade garantida</p>
-            </div>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+             <div className="text-center">
+               <div className="bg-blue-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-blue-400/30">
+                 <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                 </svg>
+               </div>
+               <h3 className="text-xl font-bold text-white mb-2">Produção Rápida</h3>
+               <p className="text-blue-100">Menor prazo de entrega do mercado com qualidade garantida</p>
+             </div>
 
-            <div className="text-center">
-              <div className="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Qualidade Premium</h3>
-              <p className="text-gray-600">Materiais de alta qualidade e impressão digital HD</p>
-            </div>
+             <div className="text-center">
+               <div className="bg-green-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-green-400/30">
+                 <svg className="w-10 h-10 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                 </svg>
+               </div>
+               <h3 className="text-xl font-bold text-white mb-2">Qualidade Premium</h3>
+               <p className="text-blue-100">Materiais de alta qualidade e impressão digital HD</p>
+             </div>
 
-            <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Atendimento Personalizado</h3>
-              <p className="text-gray-600">Suporte completo do projeto à entrega</p>
-            </div>
+             <div className="text-center">
+               <div className="bg-purple-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-purple-400/30">
+                 <svg className="w-10 h-10 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                 </svg>
+               </div>
+               <h3 className="text-xl font-bold text-white mb-2">Atendimento Personalizado</h3>
+               <p className="text-blue-100">Suporte completo do projeto à entrega</p>
+             </div>
 
-            <div className="text-center">
-              <div className="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Melhor Custo-Benefício</h3>
-              <p className="text-gray-600">Preços competitivos com qualidade superior</p>
-            </div>
-                     </div>
+             <div className="text-center">
+               <div className="bg-yellow-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-yellow-400/30">
+                 <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                 </svg>
+               </div>
+               <h3 className="text-xl font-bold text-white mb-2">Melhor Custo-Benefício</h3>
+               <p className="text-blue-100">Preços competitivos com qualidade superior</p>
+             </div>
+           </div>
          </div>
        </section>
 
@@ -511,7 +511,7 @@ export default function Home() {
        </section>
 
        {/* Seção de Diferenciais Técnicos */}
-       <section className="py-20 w-full bg-gray-50">
+       <section className="py-20 w-full bg-white">
          <div className="container mx-auto px-4">
            <div className="text-center mb-16">
              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -577,7 +577,7 @@ export default function Home() {
        </section>
 
        {/* Seção de Formulário de Orçamento */}
-       <section className="py-20 w-full bg-white">
+       <section className="py-20 w-full bg-gray-50">
          <div className="container mx-auto px-4">
            <div className="max-w-4xl mx-auto">
              <div className="text-center mb-16">
