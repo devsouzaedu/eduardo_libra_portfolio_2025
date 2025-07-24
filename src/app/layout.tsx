@@ -122,6 +122,23 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16939666429');
+            
+            // Event snippet for Clique de saída conversion page
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-16939666429/f6XPCMXt5fcaEP2Xu40_',
+                  'event_callback': callback
+              });
+              return false;
+            }
+            
+            // Disponibilizar a função globalmente
+            window.gtag_report_conversion = gtag_report_conversion;
           `}
         </Script>
       </head>
