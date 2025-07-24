@@ -92,60 +92,61 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-400 rounded-full blur-3xl"></div>
         </div>
         
-                 <div className="container mx-auto safe-area-mobile py-16 relative z-10">
-           {/* Layout Mobile - Vertical */}
-           <div className="flex flex-col items-center justify-center min-h-[85vh] text-center space-y-8 lg:hidden">
-             
-             {/* Imagem Principal Mobile */}
-             <div className="relative mt-4">
-               <div className="relative z-10 mx-auto w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
-                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-                 <Image 
-                   src="/inflavel_varios_use.webp" 
-                   alt="Infláveis Promocionais Personalizados"
-                   fill
-                   className="object-contain relative z-10 drop-shadow-2xl"
-                   priority
-                 />
-               </div>
-             </div>
-             
-             {/* Conteúdo de texto Mobile */}
-             <div className="text-white space-y-6 max-w-4xl px-2">
-               <div className="space-y-4">
-                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-                   <span className="block">Infláveis personalizados para</span>
-                   <span className="block text-yellow-300">quem quer <span className="text-yellow-400">vender mais</span></span>
-                   <span className="block">e ser visto</span>
-                 </h1>
-                 
-                 <p className="text-lg sm:text-xl md:text-2xl text-blue-100 leading-relaxed px-4">
-                   Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
-                 </p>
-               </div>
-               
-               <div className="flex flex-col gap-4 justify-center px-4">
-                 <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer" className="w-full">
-                   <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-4 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
-                     Quero meu inflável personalizado →
-                   </Button>
-                 </a>
-               </div>
-               
-               {/* Badges de destaque Mobile */}
-               <div className="flex flex-wrap justify-center gap-3 text-xs sm:text-sm px-4">
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
-                   ⚡ <span>Entrega rápida</span>
-                 </div>
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
-                   🎨 <span>Design 3D incluso</span>
-                 </div>
-                 <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 flex items-center gap-2">
-                   ✅ <span>25+ anos</span>
-                 </div>
-               </div>
-             </div>
-           </div>
+        <div className="container mx-auto safe-area-mobile py-8 sm:py-12 lg:py-16 relative z-10">
+          {/* Layout Mobile - Vertical */}
+          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] text-center space-y-6 sm:space-y-8 lg:hidden">
+            
+            {/* Imagem Principal Mobile */}
+            <div className="relative mt-2 sm:mt-4">
+              <div className="relative z-10 mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                <Image 
+                  src="/inflavel_varios_use.webp" 
+                  alt="Infláveis Promocionais Personalizados"
+                  fill
+                  className="object-contain relative z-10 drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </div>
+            
+            {/* Conteúdo de texto Mobile */}
+            <div className="text-white space-y-4 sm:space-y-6 max-w-4xl px-2 sm:px-4">
+              <div className="space-y-3 sm:space-y-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                  <span className="block">Infláveis personalizados</span>
+                  <span className="block">para quem quer</span>
+                  <span className="block text-yellow-300"><span className="text-yellow-400">vender mais</span></span>
+                  <span className="block">e ser visto</span>
+                </h1>
+                
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 leading-relaxed px-2 sm:px-4">
+                  Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
+                </p>
+              </div>
+              
+              <div className="flex flex-col gap-3 sm:gap-4 justify-center px-2 sm:px-4 pt-2">
+                <a href="https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base md:text-lg rounded-full shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105">
+                    Quero meu inflável personalizado →
+                  </Button>
+                </a>
+              </div>
+              
+              {/* Badges de destaque Mobile */}
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-3 text-xs sm:text-sm px-2 sm:px-4 pt-2">
+                <div className="bg-white/20 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2 flex items-center gap-1 sm:gap-2">
+                  ⚡ <span>Entrega rápida</span>
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2 flex items-center gap-1 sm:gap-2">
+                  🎨 <span>Design 3D incluso</span>
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2 flex items-center gap-1 sm:gap-2">
+                  ✅ <span>25+ anos</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
            {/* Layout Desktop - Horizontal */}
            <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-20 items-center min-h-[85vh]">
@@ -406,20 +407,20 @@ export default function Home() {
        </section>
 
        {/* Galeria de Produtos com as Imagens Fornecidas */}
-       <section className="py-16 w-full bg-white">
+       <section className="py-12 sm:py-16 w-full bg-white">
          <div className="container mx-auto safe-area-mobile">
-           <div className="text-center mb-12">
-             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
+           <div className="text-center mb-8 sm:mb-12">
+             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 px-2 sm:px-4 leading-tight">
                Galeria de Infláveis Promocionais
              </h2>
-             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                Conheça alguns dos nossos projetos realizados. Cada inflável é único e personalizado 
                para atender às necessidades específicas de nossos clientes.
              </p>
            </div>
 
            {/* Grid de Imagens */}
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8 lg:mb-12">
              {/* Tendas Infláveis */}
              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
                <div className="relative h-80">
@@ -534,34 +535,34 @@ export default function Home() {
        </section>
 
        {/* Seção de Experiência e Credibilidade */}
-       <section className="py-20 w-full bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+       <section className="py-12 sm:py-16 lg:py-20 w-full bg-gradient-to-r from-blue-900 to-purple-900 text-white">
          <div className="container mx-auto safe-area-mobile">
-           <div className="text-center mb-16">
-             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-               Mais de 25 Anos de Experiência
+           <div className="text-center mb-12 sm:mb-16">
+             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 px-2 leading-tight">
+               Por que escolher nossos Infláveis Promocionais?
              </h2>
-             <p className="text-xl max-w-3xl mx-auto opacity-90">
-               Dos balões de ar quente aos infláveis promocionais, nossa expertise garante 
-               qualidade premium e resultados excepcionais para sua marca.
+             <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 px-2 sm:px-4 leading-relaxed">
+               Mais de 25 anos de experiência na fabricação de balões de ar quente e infláveis promocionais, 
+               nossa expertise garante qualidade premium e resultados excepcionais para sua marca.
              </p>
            </div>
 
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-             <div>
-               <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">25+</div>
-               <p className="text-lg">Anos de Experiência</p>
+           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
+             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
+               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-yellow-400 mb-2">25+</div>
+               <p className="text-sm sm:text-base lg:text-lg">Anos de Experiência</p>
              </div>
-             <div>
-               <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">500+</div>
-               <p className="text-lg">Projetos Realizados</p>
+             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
+               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-yellow-400 mb-2">500+</div>
+               <p className="text-sm sm:text-base lg:text-lg">Projetos Realizados</p>
              </div>
-             <div>
-               <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">100%</div>
-               <p className="text-lg">Clientes Satisfeitos</p>
+             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
+               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-yellow-400 mb-2">100%</div>
+               <p className="text-sm sm:text-base lg:text-lg">Clientes Satisfeitos</p>
              </div>
-             <div>
-               <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2">24h</div>
-               <p className="text-lg">Suporte Técnico</p>
+             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20">
+               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-yellow-400 mb-2">24h</div>
+               <p className="text-sm sm:text-base lg:text-lg">Suporte Técnico</p>
              </div>
            </div>
          </div>
@@ -634,25 +635,25 @@ export default function Home() {
        </section>
 
        {/* Seção de Formulário de Orçamento */}
-       <section className="py-16 w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
+       <section className="py-12 sm:py-16 w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
          style={{ backgroundColor: '#1e293b' }}>
          <div className="container mx-auto safe-area-mobile">
            <div className="max-w-6xl mx-auto">
-             <div className="text-center mb-12">
-               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-4">
+             <div className="text-center mb-8 sm:mb-12">
+               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 px-2 sm:px-4 leading-tight">
                  Solicite seu Orçamento Gratuito
                </h2>
-               <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-4">
+               <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                  Preencha o formulário abaixo e receba um orçamento personalizado para seu inflável promocional. 
                  Resposta em até 24 horas!
                </p>
              </div>
 
-             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
                {/* Formulário */}
-               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-white/20">
-                 <form className="space-y-6">
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 border border-white/20">
+                 <form className="space-y-4 sm:space-y-6">
+                   <div className="grid grid-cols-1 gap-4">
                      <div>
                        <label htmlFor="nome" className="block text-sm font-medium text-white mb-2">
                          Seu Nome *
@@ -662,7 +663,7 @@ export default function Home() {
                          id="nome"
                          name="nome"
                          required
-                         className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                          placeholder="Digite seu nome completo"
                        />
                      </div>
@@ -674,13 +675,13 @@ export default function Home() {
                          type="text"
                          id="empresa"
                          name="empresa"
-                         className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                          placeholder="Nome da empresa"
                        />
                      </div>
                    </div>
 
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                   <div className="grid grid-cols-1 gap-4">
                      <div>
                        <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                          E-mail *
@@ -690,7 +691,7 @@ export default function Home() {
                          id="email"
                          name="email"
                          required
-                         className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                          placeholder="seu@email.com"
                        />
                      </div>
@@ -703,7 +704,7 @@ export default function Home() {
                          id="telefone"
                          name="telefone"
                          required
-                         className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                         className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                          placeholder="(11) 99999-9999"
                        />
                      </div>
@@ -717,7 +718,7 @@ export default function Home() {
                        id="tipo_inflavel"
                        name="tipo_inflavel"
                        required
-                       className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                      >
                        <option value="" className="text-gray-900">Selecione o tipo desejado</option>
                        <option value="tenda_inflavel" className="text-gray-900">Tenda Inflável</option>
@@ -736,7 +737,7 @@ export default function Home() {
                      <select
                        id="urgencia"
                        name="urgencia"
-                       className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base"
                      >
                        <option value="normal" className="text-gray-900">⏳ Sem pressa - Prefiro um projeto detalhado</option>
                        <option value="medio" className="text-gray-900">🗓️ Até 20 dias está ótimo</option>
@@ -753,7 +754,7 @@ export default function Home() {
                        id="mensagem"
                        name="mensagem"
                        rows={4}
-                       className="w-full px-4 py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm"
+                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white/20 border border-white/30 text-white placeholder-white/70 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 backdrop-blur-sm text-sm sm:text-base resize-none"
                        placeholder="Conte-nos mais sobre seu projeto: tamanho desejado, cores, logotipos, local do evento, etc."
                      ></textarea>
                    </div>

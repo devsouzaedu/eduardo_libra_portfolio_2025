@@ -267,6 +267,41 @@ body {
   .card-responsive {
     @apply p-4 md:p-6 lg:p-8 rounded-lg shadow-md;
   }
+  
+  /* Melhora legibilidade de textos em mobile */
+  .text-mobile-optimized {
+    @apply text-sm sm:text-base leading-relaxed;
+  }
+  
+  .heading-mobile-optimized {
+    @apply text-lg sm:text-xl md:text-2xl font-semibold leading-tight;
+  }
+  
+  /* Espaçamento otimizado para mobile */
+  .section-mobile-spacing {
+    @apply py-8 sm:py-12 lg:py-16;
+  }
+  
+  .element-mobile-spacing {
+    @apply mb-6 sm:mb-8 lg:mb-12;
+  }
+  
+  /* Botões otimizados para mobile */
+  .btn-mobile-optimized {
+    @apply px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base font-medium rounded-lg transition-all duration-200;
+  }
+  
+  /* Formulários otimizados para mobile */
+  .input-mobile-optimized {
+    @apply px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base rounded-lg border focus:ring-2 focus:ring-offset-0 transition-colors;
+  }
+  
+  /* Previne zoom em inputs no iOS */
+  @supports (-webkit-touch-callout: none) {
+    .input-mobile-optimized {
+      font-size: 16px;
+    }
+  }
 }
 
 /* Animações personalizadas para elementos flutuantes */
