@@ -183,9 +183,24 @@ body {
     body {
       -ms-overflow-style: none;
       scrollbar-width: none;
+      overflow-x: hidden; /* Previne scroll horizontal */
     }
     body::-webkit-scrollbar {
       display: none;
+    }
+  }
+  
+  /* Ajustes específicos para iOS Safari */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Previne zoom em inputs no iOS */
+    input, select, textarea {
+      font-size: 16px;
     }
   }
 }
@@ -199,7 +214,33 @@ body {
   
   /* Container com margens laterais mais amigáveis para mobile */
   .container-mobile-friendly {
-    @apply w-full max-w-full px-0 mx-auto;
+    @apply w-full max-w-full px-4 mx-auto;
+  }
+  
+  /* Ajustes específicos para iOS Safari */
+  @supports (-webkit-touch-callout: none) {
+    .container-mobile-friendly {
+      @apply px-4 sm:px-6 md:px-8;
+    }
+  }
+  
+  /* Classe para garantir margens seguras em todos os dispositivos móveis */
+  .safe-area-mobile {
+    @apply px-4 py-2;
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  
+  @media (min-width: 640px) {
+    .safe-area-mobile {
+      @apply px-6;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .safe-area-mobile {
+      @apply px-8;
+    }
   }
   
   /* Botões responsivos que se adaptam melhor em mobile */
