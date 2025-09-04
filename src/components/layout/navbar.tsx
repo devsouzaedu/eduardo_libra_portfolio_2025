@@ -100,6 +100,13 @@ export function Navbar() {
                           Projetos
                         </MobileNavLink>
                         <MobileNavLink
+                          href="/pdv"
+                          active={pathname === "/pdv"}
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          PDV Tendas
+                        </MobileNavLink>
+                        <MobileNavLink
                           href="/cativos"
                           active={pathname.startsWith("/cativos")}
                           onClick={() => setIsMenuOpen(false)}
@@ -180,6 +187,13 @@ export function Navbar() {
                 className="text-gray-700 hover:text-blue-600"
               >
                 Projetos
+              </DesktopNavLink>
+              <DesktopNavLink 
+                href="/pdv" 
+                active={pathname === "/pdv"}
+                className="text-gray-700 hover:text-blue-600"
+              >
+                PDV Tendas
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/cativos" 

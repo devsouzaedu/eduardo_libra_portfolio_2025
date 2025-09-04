@@ -23,8 +23,8 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Eduardo Libra - Infláveis Promocionais",
-            "description": "Especialista em infláveis promocionais personalizados, tendas infláveis e balões rooftop com mais de 25 anos de experiência.",
+            "name": "Eduardo Libra - Infláveis, Tendas e Esculturas São Paulo",
+            "description": "Especialista em infláveis promocionais, tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis em São Paulo, Barueri e Alphaville. Mais de 25 anos de experiência com envio rápido.",
             "url": "https://eduardolibra.com",
             "telephone": "+55-11-97586-5565",
             "email": "contato@eduardolibra.com",
@@ -34,6 +34,20 @@ export default function Home() {
               "addressRegion": "SP",
               "addressCountry": "BR"
             },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "São Paulo"
+              },
+              {
+                "@type": "City", 
+                "name": "Barueri"
+              },
+              {
+                "@type": "City",
+                "name": "Alphaville"
+              }
+            ],
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": "-23.5505",
@@ -47,22 +61,30 @@ export default function Home() {
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Infláveis Promocionais",
+              "name": "Infláveis Promocionais São Paulo",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Tendas Infláveis Promocionais",
-                    "description": "Tendas infláveis personalizadas para eventos e promoções"
+                    "name": "Tendas Infláveis 3x3, 4x4 e 5x5",
+                    "description": "Tendas infláveis promocionais nos tamanhos 3x3, 4x4 e 5x5 metros para eventos em São Paulo, Barueri e Alphaville"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Balões Rooftop",
-                    "description": "Balões infláveis para instalação em telhados com máxima visibilidade"
+                    "name": "Esculturas Infláveis Personalizadas",
+                    "description": "Esculturas infláveis e obras de arte infláveis personalizadas para campanhas promocionais"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Balões Rooftop Promocionais",
+                    "description": "Balões infláveis para instalação em telhados com máxima visibilidade em São Paulo"
                   }
                 },
                 {
@@ -70,7 +92,7 @@ export default function Home() {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Infláveis Promocionais Personalizados",
-                    "description": "Infláveis promocionais sob medida para campanhas de marketing"
+                    "description": "Infláveis promocionais sob medida para campanhas de marketing com envio rápido"
                   }
                 }
               ]
@@ -83,7 +105,10 @@ export default function Home() {
             "founder": {
               "@type": "Person",
               "name": "Eduardo Libra"
-            }
+            },
+            "sameAs": [
+              "https://api.whatsapp.com/send/?phone=5511975865565"
+            ]
           })
         }}
       />
@@ -121,14 +146,14 @@ export default function Home() {
             <div className="text-white space-y-4 sm:space-y-6 max-w-4xl px-2 sm:px-4">
               <div className="space-y-3 sm:space-y-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                  <span className="block">Infláveis personalizados</span>
-                  <span className="block">para quem quer</span>
-                  <span className="block text-yellow-300"><span className="text-yellow-400">vender mais</span></span>
-                  <span className="block">e ser visto</span>
+                  <span className="block">Infláveis promocionais</span>
+                  <span className="block">e tendas infláveis</span>
+                  <span className="block text-yellow-300">em <span className="text-yellow-400">São Paulo</span></span>
+                  <span className="block">com envio rápido</span>
                 </h1>
                 
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-100 leading-relaxed px-2 sm:px-4">
-                  Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
+                  Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis para Barueri, Alphaville e toda Grande São Paulo.
                 </p>
               </div>
               
@@ -184,14 +209,14 @@ export default function Home() {
              <div className="text-white space-y-10 order-2">
                <div className="space-y-8">
                  <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
-                   <span className="block">Infláveis</span>
-                   <span className="block">personalizados para</span>
-                   <span className="block text-yellow-300">quem quer <span className="text-yellow-400">vender mais</span></span>
-                   <span className="block">e ser visto</span>
+                   <span className="block">Infláveis promocionais</span>
+                   <span className="block">e tendas infláveis</span>
+                   <span className="block text-yellow-300">em <span className="text-yellow-400">São Paulo</span></span>
+                   <span className="block">com envio rápido</span>
                  </h1>
                  
                  <p className="text-2xl xl:text-3xl text-blue-100 leading-relaxed">
-                   Em pontos de venda ou grandes eventos, os infláveis Eduardo Libra destacam sua empresa de longe.
+                   Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis para Barueri, Alphaville e toda Grande São Paulo.
                  </p>
                </div>
                
@@ -240,11 +265,11 @@ export default function Home() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
-              Nossos Infláveis Promocionais
+              Tendas Infláveis e Esculturas Promocionais
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Fabricamos infláveis promocionais personalizados de 2 a 30 metros de altura, 
-              com qualidade premium e impacto visual garantido para sua marca.
+              Fabricamos tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis personalizadas para São Paulo, Barueri e Alphaville. 
+              Infláveis promocionais de 2 a 30 metros de altura com envio rápido e qualidade premium garantida.
             </p>
           </div>
 
@@ -260,32 +285,39 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Tendas Infláveis</h3>
-                  <p className="text-sm opacity-90">Espaços promocionais únicos</p>
+                  <h3 className="text-2xl font-bold mb-2">Tendas Infláveis 3x3, 4x4, 5x5</h3>
+                  <p className="text-sm opacity-90">Espaços promocionais para SP e região</p>
                 </div>
               </div>
               <div className="p-6">
-                <ul className="space-y-2 text-gray-600 mb-6">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Motor embutido com iluminação LED
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Montagem rápida e fácil
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Personalização completa
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Material resistente e durável
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Solicitar Orçamento
-                </Button>
+                                 <ul className="space-y-2 text-gray-600 mb-6">
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Tendas 3x3, 4x4 e 5x5 metros
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Motor embutido com iluminação LED
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Entrega rápida em São Paulo
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Atendemos Barueri e Alphaville
+                   </li>
+                 </ul>
+                <div className="space-y-3">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Solicitar Orçamento
+                  </Button>
+                  <Link href="/pdv">
+                    <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
+                      Ver PDV com Armação Alumínio →
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -340,29 +372,29 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Infláveis Diversos</h3>
-                  <p className="text-sm opacity-90">Formatos personalizados</p>
+                  <h3 className="text-2xl font-bold mb-2">Esculturas Infláveis</h3>
+                  <p className="text-sm opacity-90">Obras de arte infláveis personalizadas</p>
                 </div>
               </div>
               <div className="p-6">
-                <ul className="space-y-2 text-gray-600 mb-6">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Réplicas de produtos
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Mascotes infláveis
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Portais e arcos
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Totens promocionais
-                  </li>
-                </ul>
+                                 <ul className="space-y-2 text-gray-600 mb-6">
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Esculturas infláveis artísticas
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Obras de arte infláveis
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Réplicas e mascotes infláveis
+                   </li>
+                   <li className="flex items-center">
+                     <span className="text-green-500 mr-2">✓</span>
+                     Portais e totens promocionais
+                   </li>
+                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">
                   Solicitar Orçamento
                 </Button>
@@ -372,7 +404,71 @@ export default function Home() {
         </div>
       </section>
 
-             {/* Seção Por que escolher nossos infláveis */}
+             {/* Seção Tamanhos de Tendas */}
+       <section className="py-16 w-full bg-gray-50">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-12">
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+               Tendas Infláveis: Tamanhos Disponíveis
+             </h2>
+             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+               Oferecemos tendas infláveis promocionais em diversos tamanhos para atender suas necessidades em São Paulo, Barueri e Alphaville.
+             </p>
+           </div>
+
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+             <div className="text-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+               <div className="text-4xl font-bold text-blue-600 mb-4">3x3m</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">Tenda Inflável 3x3</h3>
+               <p className="text-gray-600 mb-4">Ideal para eventos menores e ativações de marca em pontos de venda</p>
+               <ul className="text-sm text-gray-500 space-y-1">
+                 <li>• Perfeita para lojas</li>
+                 <li>• Fácil transporte</li>
+                 <li>• Setup em 10 minutos</li>
+               </ul>
+             </div>
+
+             <div className="text-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-blue-500">
+               <div className="text-4xl font-bold text-blue-600 mb-4">4x4m</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">Tenda Inflável 4x4</h3>
+               <p className="text-gray-600 mb-4">Tamanho mais popular para eventos corporativos e feiras</p>
+               <ul className="text-sm text-gray-500 space-y-1">
+                 <li>• Espaço amplo</li>
+                 <li>• Ideal para feiras</li>
+                 <li>• Máximo impacto visual</li>
+               </ul>
+               <div className="mt-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">
+                 MAIS POPULAR
+               </div>
+             </div>
+
+             <div className="text-center bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+               <div className="text-4xl font-bold text-blue-600 mb-4">5x5m</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">Tenda Inflável 5x5</h3>
+               <p className="text-gray-600 mb-4">Para grandes eventos e máxima visibilidade da marca</p>
+               <ul className="text-sm text-gray-500 space-y-1">
+                 <li>• Eventos de grande porte</li>
+                 <li>• Máxima capacidade</li>
+                 <li>• Impacto profissional</li>
+               </ul>
+             </div>
+           </div>
+
+           <div className="text-center mt-12">
+             <Button 
+               size="lg" 
+               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4"
+               onClick={() => {
+                 window.open('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Gostaria+de+or%C3%A7amento+para+tendas+infl%C3%A1veis+3x3%2C+4x4+ou+5x5', '_blank');
+               }}
+             >
+               Solicitar Orçamento para Tendas 3x3, 4x4 ou 5x5
+             </Button>
+           </div>
+         </div>
+       </section>
+
+       {/* Seção Por que escolher nossos infláveis */}
        <section className="py-16 w-full bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
          <div className="container mx-auto safe-area-mobile">
            <div className="text-center mb-12">
@@ -380,8 +476,8 @@ export default function Home() {
                Por que escolher nossos Infláveis Promocionais?
              </h2>
              <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-4">
-               Mais de 25 anos de experiência na fabricação de balões de ar quente e infláveis promocionais, 
-               garantindo qualidade premium e resultados excepcionais.
+               Mais de 25 anos fabricando infláveis promocionais, tendas 3x3, 4x4, 5x5 e esculturas infláveis em São Paulo, 
+               com envio rápido para Barueri, Alphaville e toda região metropolitana.
              </p>
            </div>
 
@@ -434,11 +530,11 @@ export default function Home() {
          <div className="w-full px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-8 sm:mb-12">
              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 px-2 sm:px-4 leading-tight">
-               Galeria de Infláveis Promocionais
+               Galeria: Tendas, Esculturas e Obras de Arte Infláveis
              </h2>
              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
-               Conheça alguns dos nossos projetos realizados. Cada inflável é único e personalizado 
-               para atender às necessidades específicas de nossos clientes.
+               Projetos realizados em São Paulo, Barueri e Alphaville. Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis 
+               personalizadas com envio rápido para toda região metropolitana.
              </p>
            </div>
 
@@ -455,8 +551,8 @@ export default function Home() {
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                  <div className="absolute bottom-4 left-4 text-white">
-                   <h3 className="text-xl font-bold mb-1">Tenda Inflável Sika</h3>
-                   <p className="text-sm opacity-90">Tenda promocional personalizada</p>
+                   <h3 className="text-xl font-bold mb-1">Tenda Inflável 4x4 Sika</h3>
+                   <p className="text-sm opacity-90">Tenda promocional São Paulo</p>
                  </div>
                </div>
              </div>
@@ -471,8 +567,8 @@ export default function Home() {
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                  <div className="absolute bottom-4 left-4 text-white">
-                   <h3 className="text-xl font-bold mb-1">Tenda Inflável CIMED</h3>
-                   <p className="text-sm opacity-90">Estrutura promocional robusta</p>
+                   <h3 className="text-xl font-bold mb-1">Tenda Inflável 5x5 CIMED</h3>
+                   <p className="text-sm opacity-90">Estrutura promocional Barueri</p>
                  </div>
                </div>
              </div>
@@ -487,8 +583,8 @@ export default function Home() {
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                  <div className="absolute bottom-4 left-4 text-white">
-                   <h3 className="text-xl font-bold mb-1">Tenda Fibra Móveis</h3>
-                   <p className="text-sm opacity-90">Design exclusivo e impactante</p>
+                   <h3 className="text-xl font-bold mb-1">Tenda 3x3 Fibra Móveis</h3>
+                   <p className="text-sm opacity-90">Design exclusivo Alphaville</p>
                  </div>
                </div>
              </div>
@@ -891,6 +987,73 @@ export default function Home() {
                  </div>
                </div>
              </div>
+           </div>
+         </div>
+       </section>
+
+       {/* Seção Áreas Atendidas */}
+       <section className="py-16 w-full bg-white">
+         <div className="w-full px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-12">
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+               Atendemos Toda Grande São Paulo
+             </h2>
+             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+               Entrega rápida de infláveis promocionais, tendas 3x3, 4x4, 5x5 e esculturas infláveis para toda região metropolitana
+             </p>
+           </div>
+
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+             <div className="text-center bg-blue-50 rounded-xl p-8 hover:bg-blue-100 transition-colors">
+               <div className="text-4xl mb-4">🏢</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">São Paulo Capital</h3>
+               <p className="text-gray-600 mb-4">Atendimento completo na capital paulista</p>
+               <ul className="text-sm text-gray-500 space-y-2">
+                 <li>• Infláveis promocionais São Paulo</li>
+                 <li>• Tendas 3x3, 4x4, 5x5 metros</li>
+                 <li>• Esculturas infláveis personalizadas</li>
+                 <li>• Obras de arte infláveis</li>
+               </ul>
+             </div>
+
+             <div className="text-center bg-green-50 rounded-xl p-8 hover:bg-green-100 transition-colors">
+               <div className="text-4xl mb-4">🌳</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">Barueri</h3>
+               <p className="text-gray-600 mb-4">Especialistas em infláveis para Barueri</p>
+               <ul className="text-sm text-gray-500 space-y-2">
+                 <li>• Infláveis Barueri</li>
+                 <li>• Tendas promocionais Barueri</li>
+                 <li>• Entrega rápida região oeste</li>
+                 <li>• Suporte técnico local</li>
+               </ul>
+             </div>
+
+             <div className="text-center bg-purple-50 rounded-xl p-8 hover:bg-purple-100 transition-colors">
+               <div className="text-4xl mb-4">🏙️</div>
+               <h3 className="text-xl font-bold text-gray-900 mb-3">Alphaville</h3>
+               <p className="text-gray-600 mb-4">Atendimento premium em Alphaville</p>
+               <ul className="text-sm text-gray-500 space-y-2">
+                 <li>• Infláveis Alphaville</li>
+                 <li>• Tendas empresariais</li>
+                 <li>• Eventos corporativos</li>
+                 <li>• Instalação profissional</li>
+               </ul>
+             </div>
+           </div>
+
+           <div className="text-center mt-12">
+             <p className="text-lg text-gray-600 mb-6">
+               <strong>Outras regiões atendidas:</strong> Osasco, Cotia, Jandira, Itapevi, Santana de Parnaíba, Carapicuíba e toda Grande São Paulo
+             </p>
+             <Button 
+               size="lg" 
+               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4"
+               onClick={() => {
+                 window.open('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Gostaria+de+saber+sobre+entrega+de+infl%C3%A1veis+na+minha+regi%C3%A3o', '_blank');
+               }}
+             >
+               Verificar Entrega na Minha Região
+             </Button>
            </div>
          </div>
        </section>

@@ -286,9 +286,9 @@ export default function Projetos() {
   return (
     <div className="container mx-auto section-spacing pb-24">
       <div className="text-center element-spacing">
-        <h1 className="text-4xl font-bold mb-6">Galeria de Projetos</h1>
+        <h1 className="text-4xl font-bold mb-6">Galeria: Tendas Infláveis, Esculturas e Obras de Arte</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Conheça nossas obras de arte infláveis gigantes, balões especiais e outros produtos exclusivos
+          Projetos de infláveis promocionais, tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis para São Paulo, Barueri e Alphaville
         </p>
       </div>
 

@@ -14,9 +14,9 @@ export default function ContatoPage() {
   return (
     <div className="container mx-auto py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-8 sm:mb-12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 px-2 leading-tight">Solicite seu Orçamento</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 px-2 leading-tight">Orçamento: Tendas Infláveis e Esculturas SP</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-4 leading-relaxed">
-          Entre em contato para discutir sua próxima obra de arte inflável gigante personalizada
+          Solicite orçamento para infláveis promocionais, tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis em São Paulo, Barueri e Alphaville
         </p>
       </div>
 

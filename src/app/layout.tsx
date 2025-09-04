@@ -10,13 +10,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Eduardo Libra - Infláveis Promocionais, Tendas Infláveis e Balões Rooftop",
+    default: "Infláveis, Tendas e Esculturas infláveis em São Paulo, Envio Rápido",
     template: "%s | Eduardo Libra",
   },
-  description: "Especialista em infláveis promocionais personalizados, tendas infláveis e balões rooftop. Mais de 25 anos de experiência, fabricação própria e entrega em todo Brasil. Solicite seu orçamento gratuito!",
+  description: "Infláveis promocionais em São Paulo, Barueri e Alphaville. Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis. Especialista com 25+ anos, fabricação própria e entrega rápida em toda Grande SP.",
   keywords: [
     "Infláveis promocionais",
+    "Infláveis Barueri",
+    "Infláveis Alphaville", 
+    "Infláveis São Paulo",
+    "Tendas 3x3",
+    "Tendas 4x4",
+    "Tendas 5x5",
     "Tendas infláveis",
+    "Esculturas infláveis",
+    "Obras de arte infláveis",
     "Balões rooftop",
     "Infláveis personalizados",
     "Marketing inflável",
@@ -33,7 +41,9 @@ export const metadata: Metadata = {
     "Ação promocional",
     "Inflável gigante",
     "Estrutura inflável",
-    "São Paulo",
+    "Grande São Paulo",
+    "Região metropolitana",
+    "Envio rápido",
     "Brasil",
   ],
   authors: [{ name: "Eduardo Libra" }],
@@ -56,16 +66,16 @@ export const metadata: Metadata = {
     apple: "/logo_novo_real_oficial.jpeg",
   },
   openGraph: {
-    title: "Eduardo Libra - Infláveis Promocionais de Alto Impacto",
-    description: "Destaque sua marca com infláveis promocionais personalizados. Tendas infláveis, balões rooftop e soluções criativas para sua campanha. Orçamento gratuito!",
+    title: "Infláveis, Tendas e Esculturas infláveis em São Paulo, Envio Rápido",
+    description: "Infláveis promocionais em São Paulo, Barueri e Alphaville. Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis. Especialista com 25+ anos de experiência.",
     url: "https://eduardolibra.com",
-    siteName: "Eduardo Libra",
+    siteName: "Eduardo Libra - Infláveis SP",
     images: [
       {
         url: "/logo_novo_real_oficial.jpeg",
         width: 1200,
         height: 630,
-        alt: "Eduardo Libra - Infláveis Promocionais",
+        alt: "Infláveis Promocionais São Paulo - Tendas e Esculturas Infláveis",
       },
     ],
     locale: "pt_BR",
@@ -73,8 +83,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Eduardo Libra - Infláveis Promocionais de Alto Impacto",
-    description: "Destaque sua marca com infláveis promocionais personalizados. Tendas infláveis, balões rooftop e soluções criativas.",
+    title: "Infláveis, Tendas e Esculturas infláveis em São Paulo, Envio Rápido",
+    description: "Infláveis promocionais em SP, Barueri e Alphaville. Tendas 3x3, 4x4, 5x5, esculturas e obras de arte infláveis.",
     images: ["/logo_novo_real_oficial.jpeg"],
   },
   robots: {
@@ -90,6 +100,16 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
+  },
+  other: {
+    'geo.region': 'BR-SP',
+    'geo.placename': 'São Paulo',
+    'geo.position': '-23.5505;-46.6333',
+    'ICBM': '-23.5505, -46.6333',
+    'DC.title': 'Infláveis, Tendas e Esculturas infláveis em São Paulo, Envio Rápido',
+    'DC.creator': 'Eduardo Libra',
+    'DC.subject': 'Infláveis promocionais, tendas infláveis, esculturas infláveis',
+    'DC.description': 'Infláveis promocionais em São Paulo, Barueri e Alphaville. Tendas 3x3, 4x4, 5x5, esculturas infláveis e obras de arte infláveis',
   },
 };
 
