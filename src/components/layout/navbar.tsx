@@ -31,20 +31,20 @@ export function Navbar() {
                     size="icon"
                     className={`
                       mr-4 lg:hidden transition-all duration-200 ease-in-out
-                      hover:bg-gray-100 hover:scale-105 active:scale-95
+                      hover:bg-brand-blue/10 hover:scale-105 active:scale-95 bg-brand-blue/5 border border-brand-blue/20 rounded-full
                       ${isMenuOpen ? 'rotate-90' : 'rotate-0'}
                     `}
                   >
                     <div className="relative w-6 h-6">
                       <Menu 
                         className={`
-                          absolute inset-0 h-6 w-6 transition-all duration-300 ease-in-out
+                          absolute inset-0 h-6 w-6 transition-all duration-300 ease-in-out text-brand-blue
                           ${isMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'}
                         `} 
                       />
                       <X 
                         className={`
-                          absolute inset-0 h-6 w-6 transition-all duration-300 ease-in-out
+                          absolute inset-0 h-6 w-6 transition-all duration-300 ease-in-out text-brand-blue
                           ${isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'}
                         `} 
                       />
@@ -226,8 +226,8 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  hidden md:flex items-center bg-brand-yellow hover:bg-brand-yellow/90 
-                  text-brand-black rounded-full px-6 py-3 text-sm font-bold 
+                  hidden md:flex items-center bg-green-500 hover:bg-green-600 
+                  text-white rounded-full px-6 py-3 text-sm font-bold 
                   transition-all duration-200 hover:scale-105 hover:shadow-lg 
                   active:scale-95 group shadow-lg
                 "
@@ -250,7 +250,7 @@ export function Navbar() {
                   size="icon"
                   className="
                     transition-all duration-200 hover:scale-105 active:scale-95
-                    text-brand-yellow hover:bg-brand-yellow/10 bg-brand-blue rounded-full
+                    text-white hover:bg-green-600/20 bg-green-500 rounded-full border border-green-600/30
                   "
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

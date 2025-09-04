@@ -38,6 +38,20 @@ export default function PDVPage() {
                   <span className="block">Armação Alumínio</span>
                 </h1>
                 
+                {/* Imagem da tenda abaixo do título */}
+                <div className="relative w-full max-w-md mx-auto my-8">
+                  <div className="relative h-48 sm:h-56 lg:h-64 rounded-xl overflow-hidden shadow-2xl">
+                    <Image
+                      src="/tenda2.png"
+                      alt="Tenda PDV 4x3 com armação de alumínio"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  </div>
+                </div>
+                
                 <p className="text-xl xl:text-2xl text-gray-300 leading-relaxed">
                   Tenda ideal para usar como <strong>Ponto de Venda (PDV)</strong> para sua grande marca ou negócio. 
                   Estrutura robusta com lona resistente e armação sólida em alumínio.
@@ -58,7 +72,7 @@ export default function PDVPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-brand-yellow/25 transition-all duration-300 hover:scale-105"
+                  className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
                   onClick={() => {
                     if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                       window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+or%C3%A7amento+para+Tenda+PDV+4x3+com+arma%C3%A7%C3%A3o+de+alum%C3%ADnio');
@@ -440,7 +454,7 @@ export default function PDVPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
             <Button 
               size="lg" 
-              className="bg-brand-white text-brand-blue hover:bg-gray-100 font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse hover:animate-none"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                   window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+or%C3%A7amento+detalhado+para+Tenda+PDV+4x3+com+arma%C3%A7%C3%A3o+de+alum%C3%ADnio');

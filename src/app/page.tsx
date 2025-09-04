@@ -129,8 +129,8 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] text-center space-y-6 sm:space-y-8 lg:hidden">
             
             {/* Imagem Principal Mobile */}
-            <div className="relative mt-2 sm:mt-4">
-              <div className="relative z-10 mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+            <div className="relative mt-2 sm:mt-4 animate-bounce-in">
+              <div className="relative z-10 mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 hover-glow">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-yellow to-brand-red rounded-full blur-2xl opacity-30 animate-pulse"></div>
                 <Image 
                   src="/inflavel_varios_use.webp" 
@@ -160,7 +160,7 @@ export default function Home() {
                              <div className="flex flex-col gap-3 sm:gap-4 justify-center px-2 sm:px-4 pt-2">
                  <Button 
                    size="lg" 
-                   className="w-full bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black font-bold px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base md:text-lg rounded-full shadow-2xl hover:shadow-brand-yellow/25 transition-all duration-300 hover:scale-105"
+                   className="w-full bg-green-500 hover:bg-green-600 text-white font-bold px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base md:text-lg rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
                    onClick={() => {
                      if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                        window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado');
@@ -192,8 +192,8 @@ export default function Home() {
            <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-20 items-center min-h-[85vh]">
              
              {/* Imagem Principal Desktop - Lado Esquerdo */}
-             <div className="relative order-1">
-               <div className="relative z-10 w-full max-w-2xl mx-auto aspect-square">
+             <div className="relative order-1 animate-slide-in-left">
+               <div className="relative z-10 w-full max-w-2xl mx-auto aspect-square hover-glow">
                  <div className="absolute inset-0 bg-gradient-to-br from-brand-yellow to-brand-red rounded-full blur-3xl opacity-30 animate-pulse"></div>
                  <Image 
                    src="/inflavel_varios_use.webp" 
@@ -206,7 +206,7 @@ export default function Home() {
              </div>
              
              {/* Conteúdo de texto Desktop - Lado Direito */}
-             <div className="text-white space-y-10 order-2">
+             <div className="text-white space-y-10 order-2 animate-slide-in-right">
                <div className="space-y-8">
                  <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
                    <span className="block">Infláveis promocionais</span>
@@ -223,7 +223,7 @@ export default function Home() {
                <div className="flex gap-6">
                  <Button 
                    size="lg" 
-                   className="bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black font-bold px-10 py-5 text-xl rounded-full shadow-2xl hover:shadow-brand-yellow/25 transition-all duration-300 hover:scale-105"
+                   className="bg-green-500 hover:bg-green-600 text-white font-bold px-10 py-5 text-xl rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
                    onClick={() => {
                      if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                        window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+meu+infl%C3%A1vel+personalizado');
@@ -417,7 +417,7 @@ export default function Home() {
            </div>
 
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-blue">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border-t-4 border-brand-blue hover:border-t-8 hover-lift card-enter">
                <div className="text-3xl sm:text-4xl font-bold text-brand-blue mb-4">3x3m</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">Tenda Inflável 3x3</h3>
                <p className="text-gray-600 mb-4">Ideal para eventos menores e ativações de marca em pontos de venda</p>
@@ -428,7 +428,7 @@ export default function Home() {
                </ul>
              </div>
 
-             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-yellow relative">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border-t-4 border-brand-yellow hover:border-t-8 hover-lift card-enter relative">
                <div className="text-3xl sm:text-4xl font-bold text-brand-yellow mb-4">4x4m</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">Tenda Inflável 4x4</h3>
                <p className="text-gray-600 mb-4">Tamanho mais popular para eventos corporativos e feiras</p>
@@ -442,7 +442,7 @@ export default function Home() {
                </div>
              </div>
 
-             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-red">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 border-t-4 border-brand-red hover:border-t-8 hover-lift card-enter">
                <div className="text-3xl sm:text-4xl font-bold text-brand-red mb-4">5x5m</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">Tenda Inflável 5x5</h3>
                <p className="text-gray-600 mb-4">Para grandes eventos e máxima visibilidade da marca</p>
@@ -1004,7 +1004,7 @@ export default function Home() {
            </div>
 
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-             <div className="text-center bg-brand-blue/5 rounded-xl p-6 sm:p-8 hover:bg-brand-blue/10 transition-all duration-300 border border-brand-blue/20 hover:border-brand-blue/40">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-brand-blue hover:border-l-8 hover-lift card-enter hover:bg-blue-50">
                <div className="text-3xl sm:text-4xl mb-4">🏢</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">São Paulo Capital</h3>
                <p className="text-gray-600 mb-4">Atendimento completo na capital paulista</p>
@@ -1016,7 +1016,7 @@ export default function Home() {
                </ul>
              </div>
 
-             <div className="text-center bg-brand-yellow/5 rounded-xl p-6 sm:p-8 hover:bg-brand-yellow/10 transition-all duration-300 border border-brand-yellow/20 hover:border-brand-yellow/40">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-brand-yellow hover:border-l-8 hover-lift card-enter hover:bg-yellow-50">
                <div className="text-3xl sm:text-4xl mb-4">🌳</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">Barueri</h3>
                <p className="text-gray-600 mb-4">Especialistas em infláveis para Barueri</p>
@@ -1028,7 +1028,7 @@ export default function Home() {
                </ul>
              </div>
 
-             <div className="text-center bg-brand-red/5 rounded-xl p-6 sm:p-8 hover:bg-brand-red/10 transition-all duration-300 border border-brand-red/20 hover:border-brand-red/40">
+             <div className="text-center bg-white rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-brand-red hover:border-l-8 hover-lift card-enter hover:bg-red-50">
                <div className="text-3xl sm:text-4xl mb-4">🏙️</div>
                <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-3">Alphaville</h3>
                <p className="text-gray-600 mb-4">Atendimento premium em Alphaville</p>
@@ -1071,7 +1071,7 @@ export default function Home() {
            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
              <Button 
                size="lg" 
-               className="bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+               className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none"
                onClick={() => {
                  if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                    window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+destacar+minha+marca+com+infl%C3%A1veis+promocionais&type=phone_number&app_absent=0');
