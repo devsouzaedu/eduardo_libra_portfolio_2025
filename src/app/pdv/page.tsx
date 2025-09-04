@@ -15,11 +15,11 @@ export default function PDVPage() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full bg-gradient-to-br from-gray-800 via-gray-900 to-black overflow-hidden">
+      <section className="relative min-h-screen w-full bg-gradient-to-br from-brand-black via-brand-blue-dark to-brand-blue overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-blue-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-orange-400 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-64 h-64 bg-brand-yellow rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-brand-red rounded-full blur-3xl"></div>
         </div>
         
         <div className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
@@ -28,13 +28,13 @@ export default function PDVPage() {
             {/* Conteúdo de texto */}
             <div className="text-white space-y-8 order-2 lg:order-1">
               <div className="space-y-6">
-                <div className="inline-block bg-orange-500/20 backdrop-blur-sm rounded-full px-4 py-2 border border-orange-400/30">
-                  <span className="text-orange-300 font-medium">🏪 PDV PROFISSIONAL</span>
+                <div className="inline-block bg-brand-red/20 backdrop-blur-sm rounded-full px-4 py-2 border border-brand-red/30">
+                  <span className="text-brand-red-light font-bold">🏪 PDV PROFISSIONAL</span>
                 </div>
                 
-                <h1 className="text-4xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
                   <span className="block">Tenda PDV</span>
-                  <span className="block text-orange-300">4x3 metros</span>
+                  <span className="block text-brand-yellow">4x3 metros</span>
                   <span className="block">Armação Alumínio</span>
                 </h1>
                 
@@ -43,14 +43,14 @@ export default function PDVPage() {
                   Estrutura robusta com lona resistente e armação sólida em alumínio.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <div className="text-orange-400 font-bold text-lg">4x3m</div>
-                    <div className="text-gray-300">Dimensões ideais</div>
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 text-sm">
+                  <div className="bg-brand-yellow/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-brand-yellow/30 hover:bg-brand-yellow/20 transition-all duration-300">
+                    <div className="text-brand-yellow font-bold text-base sm:text-lg">4x3m</div>
+                    <div className="text-gray-300 text-xs sm:text-sm">Dimensões ideais</div>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <div className="text-orange-400 font-bold text-lg">Alumínio</div>
-                    <div className="text-gray-300">Armação sólida</div>
+                  <div className="bg-brand-red/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-brand-red/30 hover:bg-brand-red/20 transition-all duration-300">
+                    <div className="text-brand-red-light font-bold text-base sm:text-lg">Alumínio</div>
+                    <div className="text-gray-300 text-xs sm:text-sm">Armação sólida</div>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export default function PDVPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 hover:scale-105"
+                  className="bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-brand-yellow/25 transition-all duration-300 hover:scale-105"
                   onClick={() => {
                     if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                       window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+or%C3%A7amento+para+Tenda+PDV+4x3+com+arma%C3%A7%C3%A3o+de+alum%C3%ADnio');
@@ -70,7 +70,7 @@ export default function PDVPage() {
                   Solicitar Orçamento PDV →
                 </Button>
                 <Link href="/contato">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full transition-all duration-300 hover:scale-105">
                     Ver Mais Detalhes
                   </Button>
                 </Link>
@@ -80,7 +80,7 @@ export default function PDVPage() {
             {/* Vídeo demonstrativo */}
             <div className="relative order-1 lg:order-2">
               <div className="relative z-10 w-full max-w-2xl mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-yellow to-brand-red rounded-2xl blur-2xl opacity-30 animate-pulse"></div>
                 <div className="relative bg-black/20 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
                   <video 
                     className="w-full h-auto rounded-xl shadow-2xl"
@@ -113,8 +113,8 @@ export default function PDVPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-orange-100 rounded-full p-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-brand-yellow/20 rounded-full p-3 flex-shrink-0 border border-brand-yellow/30">
+                  <svg className="w-6 h-6 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                   </svg>
                 </div>
@@ -125,8 +125,8 @@ export default function PDVPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 rounded-full p-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-brand-blue/20 rounded-full p-3 flex-shrink-0 border border-brand-blue/30">
+                  <svg className="w-6 h-6 text-brand-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                   </svg>
                 </div>
@@ -137,8 +137,8 @@ export default function PDVPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-brand-red/20 rounded-full p-3 flex-shrink-0 border border-brand-red/30">
+                  <svg className="w-6 h-6 text-brand-red-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -149,8 +149,8 @@ export default function PDVPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-purple-100 rounded-full p-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-brand-white/20 rounded-full p-3 flex-shrink-0 border border-white/30">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -189,9 +189,9 @@ export default function PDVPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-3">📏</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-blue">
+              <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-4 flex items-center">
+                <span className="text-xl sm:text-2xl mr-3">📏</span>
                 Dimensões
               </h3>
               <ul className="space-y-2 text-gray-600">
@@ -202,9 +202,9 @@ export default function PDVPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-3">🔧</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-yellow">
+              <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-4 flex items-center">
+                <span className="text-xl sm:text-2xl mr-3">🔧</span>
                 Estrutura
               </h3>
               <ul className="space-y-2 text-gray-600">
@@ -215,9 +215,9 @@ export default function PDVPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-3">🛡️</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-t-4 border-brand-red">
+              <h3 className="text-lg sm:text-xl font-bold text-brand-black mb-4 flex items-center">
+                <span className="text-xl sm:text-2xl mr-3">🛡️</span>
                 Cobertura
               </h3>
               <ul className="space-y-2 text-gray-600">
@@ -274,7 +274,7 @@ export default function PDVPage() {
       </section>
 
       {/* Seção Vantagens para Negócios */}
-      <section className="py-16 w-full bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
+      <section className="py-12 sm:py-16 lg:py-20 w-full bg-gradient-to-br from-brand-black via-brand-blue-dark to-brand-blue text-white">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -285,45 +285,45 @@ export default function PDVPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
-              <div className="bg-orange-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-orange-400/30">
-                <svg className="w-10 h-10 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-brand-yellow/20 backdrop-blur-sm rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto mb-4 border border-brand-yellow/30">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-brand-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Montagem Rápida</h3>
-              <p className="text-gray-300">15 minutos para montar completamente, sem ferramentas especiais</p>
+                             <h3 className="text-lg sm:text-xl font-bold mb-2">Montagem Rápida</h3>
+               <p className="text-xs sm:text-sm text-gray-300">15 minutos para montar completamente, sem ferramentas especiais</p>
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-blue-400/30">
-                <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-brand-blue/20 backdrop-blur-sm rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto mb-4 border border-brand-blue/30">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-brand-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Resistência Superior</h3>
-              <p className="text-gray-300">Armação de alumínio suporta ventos até 80 km/h com segurança</p>
+                             <h3 className="text-lg sm:text-xl font-bold mb-2">Resistência Superior</h3>
+               <p className="text-xs sm:text-sm text-gray-300">Armação de alumínio suporta ventos até 80 km/h com segurança</p>
             </div>
 
             <div className="text-center">
-              <div className="bg-green-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-green-400/30">
-                <svg className="w-10 h-10 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-brand-red/20 backdrop-blur-sm rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto mb-4 border border-brand-red/30">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-brand-red-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Personalização Total</h3>
-              <p className="text-gray-300">Impressão digital em alta resolução com suas cores e logotipos</p>
+                             <h3 className="text-lg sm:text-xl font-bold mb-2">Personalização Total</h3>
+               <p className="text-xs sm:text-sm text-gray-300">Impressão digital em alta resolução com suas cores e logotipos</p>
             </div>
 
             <div className="text-center">
-              <div className="bg-purple-500/20 backdrop-blur-sm rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border border-purple-400/30">
-                <svg className="w-10 h-10 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-brand-white/20 backdrop-blur-sm rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto mb-4 border border-white/30">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Custo-Benefício</h3>
-              <p className="text-gray-300">Investimento que se paga rapidamente com aumento de visibilidade</p>
+                             <h3 className="text-lg sm:text-xl font-bold mb-2">Custo-Benefício</h3>
+               <p className="text-xs sm:text-sm text-gray-300">Investimento que se paga rapidamente com aumento de visibilidade</p>
             </div>
           </div>
         </div>
@@ -427,7 +427,7 @@ export default function PDVPage() {
       </section>
 
       {/* Seção de Orçamento */}
-      <section className="py-16 w-full bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 text-white">
+      <section className="py-12 sm:py-16 lg:py-20 w-full bg-gradient-to-br from-brand-red via-brand-yellow to-brand-blue text-white">
         <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Solicite Orçamento para Sua Tenda PDV
@@ -440,7 +440,7 @@ export default function PDVPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
             <Button 
               size="lg" 
-              className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-4 text-lg rounded-full shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-brand-white text-brand-blue hover:bg-gray-100 font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-2xl hover:scale-105 transition-all duration-300"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag_report_conversion) {
                   window.gtag_report_conversion('https://api.whatsapp.com/send/?phone=5511975865565&text=Oi%21+Quero+or%C3%A7amento+detalhado+para+Tenda+PDV+4x3+com+arma%C3%A7%C3%A3o+de+alum%C3%ADnio');
@@ -456,27 +456,27 @@ export default function PDVPage() {
             </Button>
             
             <Link href="/contato">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg rounded-full">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full transition-all duration-300 hover:scale-105">
                 Formulário Detalhado
               </Button>
             </Link>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="text-2xl font-bold text-orange-300 mb-2">📍</div>
-              <h4 className="font-bold mb-2">São Paulo Capital</h4>
-              <p className="text-sm opacity-90">Entrega e montagem em toda capital</p>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto text-center">
+            <div className="bg-brand-blue/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-brand-blue/30 hover:bg-brand-blue/20 transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-brand-blue-light mb-2">📍</div>
+              <h4 className="text-sm sm:text-base font-bold mb-2">São Paulo Capital</h4>
+              <p className="text-xs sm:text-sm opacity-90">Entrega e montagem em toda capital</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="text-2xl font-bold text-orange-300 mb-2">🌳</div>
-              <h4 className="font-bold mb-2">Barueri e Região</h4>
-              <p className="text-sm opacity-90">Atendimento especializado zona oeste</p>
+            <div className="bg-brand-yellow/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-brand-yellow/30 hover:bg-brand-yellow/20 transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-brand-yellow mb-2">🌳</div>
+              <h4 className="text-sm sm:text-base font-bold mb-2">Barueri e Região</h4>
+              <p className="text-xs sm:text-sm opacity-90">Atendimento especializado zona oeste</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="text-2xl font-bold text-orange-300 mb-2">🏙️</div>
-              <h4 className="font-bold mb-2">Alphaville</h4>
-              <p className="text-sm opacity-90">Serviço premium para empresas</p>
+            <div className="bg-brand-red/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-brand-red/30 hover:bg-brand-red/20 transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-brand-red-light mb-2">🏙️</div>
+              <h4 className="text-sm sm:text-base font-bold mb-2">Alphaville</h4>
+              <p className="text-xs sm:text-sm opacity-90">Serviço premium para empresas</p>
             </div>
           </div>
         </div>

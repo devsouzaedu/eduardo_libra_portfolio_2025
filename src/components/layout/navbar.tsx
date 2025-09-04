@@ -18,7 +18,7 @@ export function Navbar() {
     <>
       <header className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
-        bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100
+        bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-blue/10
       `}>
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 w-full items-center justify-between">
@@ -54,13 +54,13 @@ export function Navbar() {
                 </SheetTrigger>
                 <SheetContent 
                   side="left" 
-                  className="w-full h-full border-none p-0 bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800"
+                  className="w-full h-full border-none p-0 bg-gradient-to-br from-brand-blue via-brand-blue-dark to-brand-black"
                 >
                   <div className="flex flex-col h-full p-6 text-white relative overflow-hidden">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 opacity-10">
                       <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-                      <div className="absolute bottom-20 right-10 w-40 h-40 bg-yellow-300 rounded-full blur-3xl"></div>
+                      <div className="absolute bottom-20 right-10 w-40 h-40 bg-brand-yellow rounded-full blur-3xl"></div>
                     </div>
                     
                     {/* Header do Menu */}
@@ -177,42 +177,42 @@ export function Navbar() {
               <DesktopNavLink 
                 href="/" 
                 active={pathname === "/"}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-blue font-medium transition-all duration-200 hover:scale-105"
               >
                 Início
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/projetos" 
                 active={pathname === "/projetos"}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-blue font-medium transition-all duration-200 hover:scale-105"
               >
                 Projetos
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/pdv" 
                 active={pathname === "/pdv"}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-red font-medium transition-all duration-200 hover:scale-105"
               >
                 PDV Tendas
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/cativos" 
                 active={pathname.startsWith("/cativos")}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-blue font-medium transition-all duration-200 hover:scale-105"
               >
                 Voo Cativo
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/contato" 
                 active={pathname === "/contato"}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-yellow font-medium transition-all duration-200 hover:scale-105"
               >
                 Contato
               </DesktopNavLink>
               <DesktopNavLink 
                 href="/blog" 
                 active={pathname === "/blog"}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-brand-black hover:text-brand-blue font-medium transition-all duration-200 hover:scale-105"
               >
                 Blog
               </DesktopNavLink>
@@ -226,10 +226,10 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  hidden md:flex items-center bg-green-500 hover:bg-green-600 
-                  text-white rounded-lg px-6 py-3 text-sm font-semibold 
+                  hidden md:flex items-center bg-brand-yellow hover:bg-brand-yellow/90 
+                  text-brand-black rounded-full px-6 py-3 text-sm font-bold 
                   transition-all duration-200 hover:scale-105 hover:shadow-lg 
-                  active:scale-95 group
+                  active:scale-95 group shadow-lg
                 "
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="mr-2 group-hover:scale-110 transition-transform duration-200">
@@ -250,7 +250,7 @@ export function Navbar() {
                   size="icon"
                   className="
                     transition-all duration-200 hover:scale-105 active:scale-95
-                    text-green-600 hover:bg-green-50
+                    text-brand-yellow hover:bg-brand-yellow/10 bg-brand-blue rounded-full
                   "
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

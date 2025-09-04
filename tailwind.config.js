@@ -49,6 +49,24 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Nova paleta da marca
+        brand: {
+          blue: {
+            DEFAULT: '#1e40af',
+            light: '#3b82f6',
+            dark: '#1e3a8a',
+          },
+          yellow: {
+            DEFAULT: '#fbbf24',
+            light: '#fcd34d',
+          },
+          red: {
+            DEFAULT: '#ef4444',
+            light: '#f87171',
+          },
+          black: '#1a1a1a',
+          white: '#ffffff',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

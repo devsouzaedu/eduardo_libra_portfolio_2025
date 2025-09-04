@@ -3,23 +3,50 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0a192f;
-  --primary: #0a192f;
-  --primary-dark: #071326;
-  --primary-light: #172a46;
-  --secondary: #1f4287;
-  --accent: #2d6cdf;
-  --muted: #64748b;
-  --muted-foreground: #64748b;
+  --foreground: #1a1a1a;
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --primary-light: #3b82f6;
+  --secondary: #fbbf24;
+  --accent: #ef4444;
+  --muted: #6b7280;
+  --muted-foreground: #6b7280;
   --card: #ffffff;
-  --card-foreground: #0a192f;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
+  --card-foreground: #1a1a1a;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
   
-  /* Espaçamento */
-  --section-spacing: 8rem;
-  --element-spacing: 2.5rem;
-  --text-spacing: 1.5rem;
+  /* Nova paleta de cores */
+  --brand-blue: #1e40af;
+  --brand-blue-light: #3b82f6;
+  --brand-blue-dark: #1e3a8a;
+  --brand-yellow: #fbbf24;
+  --brand-yellow-light: #fcd34d;
+  --brand-red: #ef4444;
+  --brand-red-light: #f87171;
+  --brand-black: #1a1a1a;
+  --brand-white: #ffffff;
+  
+  /* Espaçamento mobile-first */
+  --section-spacing: 4rem;
+  --element-spacing: 2rem;
+  --text-spacing: 1rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-spacing: 6rem;
+    --element-spacing: 2.5rem;
+    --text-spacing: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-spacing: 8rem;
+    --element-spacing: 3rem;
+    --text-spacing: 2rem;
+  }
 }
 
 @theme inline {
@@ -184,9 +211,15 @@ body {
       -ms-overflow-style: none;
       scrollbar-width: none;
       overflow-x: hidden; /* Previne scroll horizontal */
+      font-size: 16px; /* Previne zoom em iOS */
     }
     body::-webkit-scrollbar {
       display: none;
+    }
+    
+    /* Melhora a performance de scroll em mobile */
+    * {
+      -webkit-overflow-scrolling: touch;
     }
   }
   
@@ -301,6 +334,64 @@ body {
     .input-mobile-optimized {
       font-size: 16px;
     }
+  }
+  
+  /* Classes específicas para a nova paleta de cores */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #1e40af, #1e3a8a, #1a1a1a);
+  }
+  
+  .bg-brand-gradient-warm {
+    background: linear-gradient(135deg, #fbbf24, #ef4444, #1e40af);
+  }
+  
+  .text-brand-gradient {
+    background: linear-gradient(135deg, #1e40af, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Botões com hover otimizados para mobile */
+  .btn-brand-primary {
+    background-color: #fbbf24;
+    color: #1a1a1a;
+    font-weight: bold;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-brand-primary:hover {
+    background-color: rgba(251, 191, 36, 0.9);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-brand-secondary {
+    background-color: #1e40af;
+    color: white;
+    font-weight: bold;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-brand-secondary:hover {
+    background-color: #1e3a8a;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cards com animação hover */
+  .card-brand {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-brand:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
   }
 }
 
